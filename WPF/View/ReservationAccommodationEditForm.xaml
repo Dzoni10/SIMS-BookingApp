@@ -1,0 +1,68 @@
+﻿<Page x:Class="BookingApp.WPF.View.ReservationAccommodationEditForm"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BookingApp.WPF.View"
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      mc:Ignorable="d" 
+      Title="ReservationAccommodationEditForm"
+      Height="768" Width="1024"
+      ShowsNavigationUI="False">
+
+    <Grid Background="#eff2f7">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Edit existing reservation" FontSize="18" Margin="0 0 0 20" Padding="20 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="Start Date" FontSize="15" Margin="20 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <Label Grid.Row="1" Grid.Column="0" Content="End Date" FontSize="15" Margin="20 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <Label Grid.Row="2" Grid.Column="0" Content="Reservation Days" FontSize="15" Margin="20 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <Label Grid.Row="3" Grid.Column="0" Content="Guest Number" FontSize="15" Margin="20 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <DatePicker x:Name="StartDatePicker" Grid.Row="0" Grid.Column="1" Width="118" FontSize="15" Margin="0,10,0,10" HorizontalAlignment="Left" VerticalAlignment="Center"
+                        SelectedDate="{Binding Path=AccommodationReservation.StartDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"
+                        DisplayDateStart="{x:Static sys:DateTime.Now}" />
+            <DatePicker x:Name="EndDatePicker" Grid.Row="1" Grid.Column="1" Width="118" FontSize="15" Margin="0,10,0,10" HorizontalAlignment="Left" VerticalAlignment="Center"
+                        SelectedDate="{Binding Path=AccommodationReservation.EndDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"
+                        IsEnabled="False" />
+            <Label Grid.Row="2" Grid.Column="1" x:Name="ReservationDaysLabel" Margin="0,10,0,10" FontSize="15" 
+                   Content="{Binding Path=AccommodationReservation.DaysReserved,  StringFormat='\{0\} days'}"  />
+            <Label Grid.Row="3" Grid.Column="1" x:Name="GuestNumberLabel" Margin="0,10,0,10" FontSize="15"
+                   Content="{Binding Path=AccommodationReservation.GuestCount, StringFormat={}{0} guests}" />
+
+            <Button Grid.Row="5" Grid.Column="1" Content="Send request" Margin="0 10 0 0" Padding="7" Width="118" Height="32"  HorizontalAlignment="Left" 
+                    Command="{Binding ConfirmReservationCommand}"  Style="{StaticResource ResourceKey=StyledButton}"/>
+        </Grid>
+
+            <Image
+               Grid.Row="1" Grid.Column="1" 
+               x:Name="RecommendedAccommodationImage" 
+               Width="auto" 
+               Height="auto"
+               VerticalAlignment="Top"
+               Margin="0 10 30 0"
+               Source="{Binding AccommodationReservation.Image.Path}" />
+    </Grid>
+</Page>

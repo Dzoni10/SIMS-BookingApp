@@ -1,0 +1,106 @@
+﻿<Page x:Class="BookingApp.WPF.View.RatedAccommodationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BookingApp.WPF.View"
+      xmlns:fa="clr-namespace:FontAwesome.WPF;assembly=FontAwesome.WPF"
+      mc:Ignorable="d" 
+            Height="670" Width="1024"
+      Title="RatedAccommodationPage">
+
+
+    <Grid Background="#eff2f7">
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="5*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="1" Grid.Column="0" Width="40" Height="40" Background="Transparent" BorderThickness="0" BorderBrush="Transparent" Command="{Binding LeftImageCommand}">
+                    <fa:ImageAwesome Icon="ArrowCircleLeft" Foreground="#6741d9" Width="30" Height="30" Cursor="Hand"/>
+                </Button>
+
+                <Button Grid.Row="1" Grid.Column="2"  Width="40" Height="40" Background="Transparent" BorderThickness="0" BorderBrush="Transparent" Command="{Binding RightImageCommand}">
+                    <fa:ImageAwesome Icon="ArrowCircleRight" Foreground="#6741d9" Width="30" Height="30" Cursor="Hand"/>
+                </Button>
+
+                <TextBlock Grid.Row="0" Grid.Column="1" x:Name="ReservationTextBlock" Text="{Binding RatedAccommodation}"  FontSize="18" Margin="0 0 0 0" Padding="20 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+                
+                <Image Grid.Row="1" Grid.Column="1" 
+               x:Name="RecommendedAccommodationImage" 
+               Width="Auto" 
+               Height="Auto"
+               VerticalAlignment="Top"
+               Margin="20 10 30 0"
+               Source="{Binding Path=CurrentImage.Path}" />
+
+                <Border Grid.Row="1" Grid.Column="3" BorderBrush="Blue" BorderThickness="2" CornerRadius="10" Margin="0 10 30 0">
+
+                    <Grid Grid.Row="0" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Cleanliness grade: " Margin="20 20 0 0" />
+                        <TextBlock Grid.Row="0" Grid.Column="1" x:Name="CleanlinesTitle" Text="{Binding OwnerAccommodationRate.CleanlinessGrade}" Margin="0 20 0 0" Padding="0 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+                        <TextBlock Grid.Row="1" Grid.Column="0" Text="Owner hospitality: " Margin="20 20 0 0"/>
+                        <TextBlock Grid.Row="1" Grid.Column="1" x:Name="ObeyingTheRulesTitle" Text="{Binding OwnerAccommodationRate.OwnerHospitality}" Margin="0 20 0 0" Padding="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+
+                        <TextBlock Grid.Row="2" Grid.Column="0" Text="Renovation emergency rate: " Margin="20 20 0 0"/>
+                        <TextBlock Grid.Row="2" Grid.Column="1" x:Name="EmergencyGradeTitle" Text="{Binding OwnerAccommodationRate.RenovationEmergencyGrade}" Margin="0 20 0 0" Padding="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+                    </Grid>
+
+                </Border>
+
+
+
+            </Grid>
+
+            <Border Grid.Row="1" BorderBrush="Blue" BorderThickness="2" CornerRadius="10" Margin="20 10 30 20">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Additional comment: " Margin="20 10 0 0"/>
+                    <TextBlock Grid.Row="1" Grid.Column="1" x:Name="AdditionalCommentTitle" Text="{Binding OwnerAccommodationRate.AdditionalComment}" Margin="20 -10 0 0" Padding="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+                    <TextBlock Grid.Row="2" Grid.Column="0" Text="Renovation comment: " Margin="20 10 0 0"/>
+                    <TextBlock Grid.Row="3" Grid.Column="1" x:Name="RenovationCommentTitle" Text="{Binding OwnerAccommodationRate.RenovationComment}" Margin="20 -10 0 0" Padding="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+                </Grid>
+            </Border>
+
+        </Grid>
+
+    </Grid>
+     
+</Page>

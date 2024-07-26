@@ -1,0 +1,60 @@
+﻿<Page x:Class="BookingApp.WPF.View.Owner.RatnigGuestPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BookingApp.WPF.View.Owner"
+      xmlns:ns="clr-namespace:BookingApp.Localization"
+      mc:Ignorable="d" 
+      d:DesignHeight="750" d:DesignWidth="430" Background="White"
+      Title="RatnigGuestPage">
+    <Page.Resources>
+    <ControlTemplate x:Key="ValidationTemplate">
+        <StackPanel>
+            <AdornedElementPlaceholder x:Name="textBox" />
+            <TextBlock Visibility="Visible" Text="{Binding [0].ErrorContent}" Foreground="Red" />
+        </StackPanel>
+    </ControlTemplate>
+    </Page.Resources>
+
+    <Grid>
+
+        <Label Foreground="#1277c4" FontSize="16" Margin="80,-310,280,10" Content="{ns:Loc Name:}" Height="30"></Label>
+        <Label Foreground="#1277c4" FontSize="16" Margin="45,-150,275,10" Content="{ns:Loc Cleanliness:}" Height="30"></Label>
+        <Label Foreground="#1277c4" FontSize="16" Margin="0,0,270,10" Content="{ns:Loc Following_rules:}" Height="30" Width="140"></Label>
+        <Label Foreground="#1277c4" FontSize="16" Width="154" Margin="10,130,254,0" Content="{ns:Loc Commentr:}" Height="30"></Label>
+        <TextBox x:Name="NameTexBox" Height="30" Margin="170,-310,50,10" IsReadOnly="True"></TextBox>
+        <ComboBox Height="30" Margin="170,-140,50,10" x:Name="CleanlinessComboBox" ItemsSource="{Binding Grades}" SelectedItem="{Binding GuestRate.CleanlinessGrade,UpdateSourceTrigger=PropertyChanged,ValidatesOnDataErrors=True,NotifyOnValidationError=True}" Validation.ErrorTemplate="{StaticResource ValidationTemplate}"></ComboBox>
+        <ComboBox Height="30" Margin="170,9,50,10" x:Name="RulesComboBox" ItemsSource="{Binding Grades}" SelectedItem="{Binding GuestRate.RuleGrade,UpdateSourceTrigger=PropertyChanged,ValidatesOnDataErrors=True,NotifyOnValidationError=True}" Validation.ErrorTemplate="{StaticResource ValidationTemplate}"></ComboBox>
+        <TextBox Height="70" Margin="170,190,50,10" x:Name="CommentTextBox" Text="{Binding GuestRate.Comment}"></TextBox>
+        <Button x:Name="RateButton" Content="{ns:Loc Rate}" Foreground="#04477d" FontWeight="Bold" BorderThickness="0" FontSize="15" FontFamily="Segoe UI" Height="30" Width="100" Margin="0,450,180,0" Command="{Binding RateGuestCommand}" Background="#8de0eb"></Button>
+        <Button Content="{ns:Loc Cancel}" Height="30" Width="100" Foreground="#04477d" FontWeight="Bold" BorderThickness="0" FontSize="15" FontFamily="Segoe UI" Margin="180,450,0,0" Command="{Binding CancelCommand}" Background="#8de0eb"></Button>
+
+        <Menu Width="90" Height="30" VerticalAlignment="Top" FontSize="13" FontWeight="Bold" HorizontalAlignment="Left" Margin="30,100,0,0" Background="#8de0eb"  Foreground="#1277c4" BorderBrush="#1277c4">
+            <MenuItem Header="{ns:Loc Menu}" Margin="10,5,0,0">
+                <MenuItem.HeaderTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding}" Margin="0,0,0,0"/>
+                            <TextBlock Text="▼" Margin="6,0,0,0"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </MenuItem.HeaderTemplate >
+                <MenuItem Header="{ns:Loc Add_Accommodation}" Command="{Binding RegistrationCommand}"></MenuItem>
+                <MenuItem Header="{ns:Loc Rate_Guests}" Command="{Binding RateGuestPageCommand}" ></MenuItem>
+                <MenuItem Header="{ns:Loc Owner_Profile}" Command="{Binding OwnerProfileCommand}" InputGestureText="Ctrl+P"></MenuItem>
+                <MenuItem Header="{ns:Loc Accommodations}" Command="{Binding AccommodationsCommand}" ></MenuItem>
+                <MenuItem Header="Forum" Command="{Binding ForumCommand}" InputGestureText="Ctrl+F"></MenuItem>
+                <MenuItem Header="{ns:Loc Requests}" Command="{Binding RequestCommand}"></MenuItem>
+                <MenuItem Header="{ns:Loc Renovating}" Command="{Binding RenovatingCommand}"></MenuItem>
+                <MenuItem Header="{ns:Loc Review}" Command="{Binding ReviewCommand}" InputGestureText="Ctrl+R"></MenuItem>
+                <MenuItem Header="{ns:Loc Advices}" Command="{Binding AdvicesCommand}" InputGestureText="Ctrl+A"></MenuItem>
+                <MenuItem Header="{ns:Loc Home_page}" Command="{Binding HomePageCommand}"></MenuItem>
+            </MenuItem>
+        </Menu>
+
+        <Grid.Background>
+            <ImageBrush x:Name="RatingBackground"></ImageBrush>
+        </Grid.Background>
+    </Grid>
+</Page>

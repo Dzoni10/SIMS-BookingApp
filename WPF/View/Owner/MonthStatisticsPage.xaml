@@ -1,0 +1,38 @@
+﻿<Page x:Class="BookingApp.WPF.View.Owner.MonthStatisticsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BookingApp.WPF.View.Owner"
+      xmlns:ns="clr-namespace:BookingApp.Localization"
+      mc:Ignorable="d" 
+      d:DesignHeight="750" d:DesignWidth="430"
+      Title="MonthStatistics">
+    
+    <Page.Resources>
+        <Style x:Key="DarkLabelStyle" TargetType="Label">
+            <Setter Property="Foreground" Value="#1277c4"/>
+        </Style>
+        <Style x:Key="LightLabelStyle" TargetType="Label">
+            <Setter Property="Foreground" Value="#04477d"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        <Button Height="30" Width="90" Foreground="#04477d" FontWeight="Bold" BorderThickness="0" Margin="30,40,290,660" Content="{ns:Loc Back}" Command="{Binding BackCommand}" FontFamily="Segoe UI" FontSize="15"  Background="#8de0eb"></Button>
+        <Label x:Name="TitleLabel" FontFamily="Segoe UI" FontSize="20" Margin="32,10,0,0" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Content="{ns:Loc Month_statistics}"></Label>
+
+        <DataGrid Height="Auto" MaxHeight="255" Width="400" AutoGenerateColumns="False" x:Name="MonthStatsDataGrid" ItemsSource="{Binding MonthStats, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" Margin="5,0,5,50" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="{ns:Loc Month}" Width="80" Binding="{Binding Month}"/>
+                <DataGridTextColumn Header="{ns:Loc Reserved}" Width="80" Binding="{Binding Reserved}"/>
+                <DataGridTextColumn Header="{ns:Loc Canceled}" Width="80" Binding="{Binding Canceled}"/>
+                <DataGridTextColumn Header="{ns:Loc Rescheduled}" Width="80" Binding="{Binding Rescheduled}"/>
+                <DataGridTextColumn Header="{ns:Loc Advicess}" Width="70" Binding="{Binding Advices}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Grid.Background>
+            <ImageBrush x:Name="StatBackground"></ImageBrush>
+        </Grid.Background>
+    </Grid>
+</Page>

@@ -1,0 +1,180 @@
+﻿<Page x:Class="BookingApp.WPF.View.RateAccommodationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BookingApp.WPF.View"
+      xmlns:fa="clr-namespace:FontAwesome.WPF;assembly=FontAwesome.WPF"
+      xmlns:cvt="clr-namespace:BookingApp.Utilities.Converters"
+      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+      mc:Ignorable="d" 
+      Height="670" Width="1024"
+      Title="RateAccommodationPage"
+      ShowsNavigationUI="False">
+
+    <Page.Resources>
+        <cvt:ImagePathConverter x:Key="ImagePathConverter"/>
+    </Page.Resources>
+
+    <Grid Background="#eff2f7">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" x:Name="EvaluationFormHeading" Text="Fill out the evaluation form" FontSize="18" Margin="0 0 0 20" Padding="20 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="Cleanliness" Padding="20 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="16" Width="163"/>
+            <StackPanel Grid.Row="0" Grid.Column="2" x:Name="CleanlinessStackPanel" Margin="0 0 10 0" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Height="15">
+                <RadioButton Content="1" Margin="0 0 10 0"/>
+                <RadioButton Content="2" Margin="0 0 10 0"/>
+                <RadioButton Content="3" Margin="0 0 10 0"/>
+                <RadioButton Content="4" Margin="0 0 10 0"/>
+                <RadioButton Content="5" Margin="0 0 10 0"/>
+            </StackPanel>
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="Owner hospitality" Padding="20 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="16" Width="163"/>
+            <StackPanel Grid.Row="1" Grid.Column="2" x:Name="HospitalityStackPanel" Margin="0 0 10 0" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Height="15">
+                <RadioButton Content="1" Margin="0 0 10 0"/>
+                <RadioButton Content="2" Margin="0 0 10 0"/>
+                <RadioButton Content="3" Margin="0 0 10 0"/>
+                <RadioButton Content="4" Margin="0 0 10 0"/>
+                <RadioButton Content="5" Margin="0 0 10 0"/>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <Button
+                    Width="120" 
+                    Height="50" 
+                    FontSize="12"  
+                    Margin="0 0 10 0" 
+                    Padding="5 14 5 14" 
+                    VerticalAlignment="Top" 
+                    Style="{StaticResource ResourceKey=StyledButton}" 
+                    Command="{Binding AddImageCommand, UpdateSourceTrigger=PropertyChanged}">
+
+                <StackPanel Orientation="Horizontal">
+                    <fa:ImageAwesome Icon="Image" Width="20" Height="20" Foreground="White" Margin="10" />
+                    <TextBlock Text=" Add image " VerticalAlignment="Center"/>
+                </StackPanel>
+
+            </Button>
+
+            <Button
+                    Width="120" 
+                    Height="50" 
+                    FontSize="12"  
+                    Margin="10 80 20 0" 
+                    Padding="5 14 5 14" 
+                    VerticalAlignment="Top" 
+                     Style="{StaticResource ResourceKey=StyledButton}" 
+                    Command="{Binding DeleteImageCommand, UpdateSourceTrigger=PropertyChanged}">
+
+                <StackPanel Orientation="Horizontal">
+                    <fa:ImageAwesome Icon="Trash" Width="20" Height="20" Foreground="White" Margin="10" />
+                    <TextBlock Text=" Delete image " VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            
+            <DataGrid 
+                Grid.Column="1" 
+                Height="160" 
+                Margin="10 0 20 0"
+                AutoGenerateColumns="False"
+                ItemsSource="{Binding ImagesPaths, UpdateSourceTrigger=PropertyChanged}"
+                SelectedItem="{Binding SelectedImagePath, UpdateSourceTrigger=PropertyChanged}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Image path" Binding="{Binding}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBox Grid.Row="1" x:Name="RenovationCommentTextBox" Height="100" Margin="20 50 0 0" BorderBrush="Black">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="GotFocus">
+                        <i:InvokeCommandAction Command="{Binding RenovationGetFocusCommand}" />
+                    </i:EventTrigger>
+                    <i:EventTrigger EventName="LostFocus">
+                        <i:InvokeCommandAction Command="{Binding RenovationLostFocusCommand}" />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </TextBox>
+
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" x:Name="ErrorMessageTextBlock" VerticalAlignment="Top" Margin="20 0 0 0" Height="20" Text="{Binding ErrorMessage}" ></TextBlock>
+
+            <TextBox Grid.Row="1" x:Name="AdditionalCommentTextBox" Height="100" Width="470" Margin="10 30 10 0" BorderBrush="Black">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="GotFocus">
+                        <i:InvokeCommandAction Command="{Binding CommentGetFocusCommand}" />
+                    </i:EventTrigger>
+                    <i:EventTrigger EventName="LostFocus">
+                        <i:InvokeCommandAction Command="{Binding CommentLostFocusCommand}" />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </TextBox>
+
+        </Grid>
+
+        <Grid Grid.Row="3" Grid.Column="0" Margin="10 20 10 0">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            
+            <TextBlock Grid.Row="0" Text="Emergency of renovation:" Padding="10 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="16" Width="163"/>
+
+            <ComboBox x:Name="RenovationEmergencyComboBox" Grid.Row="1" Margin="10 0 0 0" Width="490">
+                <ComboBoxItem Content="1 - It would be nice to renovate some small things"></ComboBoxItem>
+                <ComboBoxItem Content="2 - Minor criticisms on the arrangement that, if removed, would make it perfect"></ComboBoxItem>
+                <ComboBoxItem Content="3 - Several things that really bothered should be renovated"></ComboBoxItem>
+                <ComboBoxItem Content="4 - There are quite a few bad things and renovation is really necessary"></ComboBoxItem>
+                <ComboBoxItem Content="5 - In very poor condition and it's not worth renting it out unless it's renovated"></ComboBoxItem>
+            </ComboBox>
+        </Grid>
+
+        <Button 
+            Grid.Row="3" 
+            Grid.Column="1" 
+            Width="100" Height="50" 
+            Margin="0 30 20 0" 
+            HorizontalAlignment="Right" 
+            VerticalAlignment="Bottom" 
+            Content="Rate" 
+            Style="{StaticResource ResourceKey=StyledButton}" 
+            Command="{Binding RateAccommodationCommand}"></Button>
+
+    </Grid>
+</Page>

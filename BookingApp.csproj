@@ -1,0 +1,370 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Images\accept.png" />
+    <None Remove="Resources\Images\accommodation1.jpg" />
+    <None Remove="Resources\Images\accommodation11.jpg" />
+    <None Remove="Resources\Images\accommodation2.jpg" />
+    <None Remove="Resources\Images\accommodation3.png" />
+    <None Remove="Resources\Images\accommodation4.jpg" />
+    <None Remove="Resources\Images\accommodation5.jpg" />
+    <None Remove="Resources\Images\accommodation6.jpg" />
+    <None Remove="Resources\Images\add.png" />
+    <None Remove="Resources\Images\ann.png" />
+    <None Remove="Resources\Images\assessment.png" />
+    <None Remove="Resources\Images\bar-chart.png" />
+    <None Remove="Resources\Images\barselona1.jpg" />
+    <None Remove="Resources\Images\barselona2.jpg" />
+    <None Remove="Resources\Images\barselona3.jpg" />
+    <None Remove="Resources\Images\beograd1.jpg" />
+    <None Remove="Resources\Images\beograd2.jpg" />
+    <None Remove="Resources\Images\beograd3.jpg" />
+    <None Remove="Resources\Images\booking.png" />
+    <None Remove="Resources\Images\calendar.png" />
+    <None Remove="Resources\Images\calendar1.png" />
+    <None Remove="Resources\Images\checkTourist.png" />
+    <None Remove="Resources\Images\cross.png" />
+    <None Remove="Resources\Images\delete.png" />
+    <None Remove="Resources\Images\earth-icon.png" />
+    <None Remove="Resources\Images\earth.png" />
+    <None Remove="Resources\Images\edit.png" />
+
+    <None Remove="Resources\Images\find.png" />
+
+    <None Remove="Resources\Images\gift-voucher.png" />
+
+    <None Remove="Resources\Images\globe-earth.png" />
+
+    <None Remove="Resources\Images\hiking.png" />
+    <None Remove="Resources\Images\job.png" />
+    <None Remove="Resources\Images\like-icon.jpg" />
+    <None Remove="Resources\Images\location-purple.png" />
+    <None Remove="Resources\Images\location.png" />
+    <None Remove="Resources\Images\logout.png" />
+    <None Remove="Resources\Images\mailbox.png" />
+    <None Remove="Resources\Images\monitor.png" />
+    <None Remove="Resources\Images\multiply.png" />
+    <None Remove="Resources\Images\new-document.png" />
+    <None Remove="Resources\Images\pdf-file.png" />
+    <None Remove="Resources\Images\pdfback.jpg" />
+    <None Remove="Resources\Images\people-purple.png" />
+    <None Remove="Resources\Images\people.png" />
+    <None Remove="Resources\Images\person.png" />
+    <None Remove="Resources\Images\pin %281%29.png" />
+    <None Remove="Resources\Images\pin.png" />
+    <None Remove="Resources\Images\placeholder %281%29.png" />
+    <None Remove="Resources\Images\profile.png" />
+    <None Remove="Resources\Images\question-sign.png" />
+    <None Remove="Resources\Images\question.png" />
+    <None Remove="Resources\Images\quitTour.png" />
+    <None Remove="Resources\Images\rating.png" />
+    <None Remove="Resources\Images\rm222-mind-14.jpg" />
+    <None Remove="Resources\Images\signature.png" />
+    <None Remove="Resources\Images\smiling-face-with-sunglasses.png" />
+    <None Remove="Resources\Images\star_half_icon.png" />
+    <None Remove="Resources\Images\statistics.png" />
+    <None Remove="Resources\Images\thumb-star.png" />
+    <None Remove="Resources\Images\tour-guide.png" />
+    <None Remove="Resources\Images\tourIcon.png" />
+    <None Remove="Resources\Images\trend.png" />
+    <None Remove="Resources\Images\try-demo.png" />
+    <None Remove="Resources\Images\verified-user.png" />
+    <None Remove="Resources\Images\video-lesson.png" />
+    <None Remove="Resources\Images\view.png" />
+    <None Remove="Resources\Images\vinogradi1.jpg" />
+    <None Remove="Resources\Images\vinogradi2.jpg" />
+    <None Remove="Resources\Images\vinogradi3.jpg" />
+    <None Remove="Resources\Images\walk.png" />
+    <None Remove="Resources\Images\when.png" />
+    <None Remove="Resources\Images\x-icon.png" />
+    <None Remove="Resources\Images\zlatibor1.jpg" />
+    <None Remove="Resources\Images\zlatibor2.jpg" />
+    <None Remove="Resources\Images\zlatibor3.jpg" />
+    <None Remove="Resources\Tutorial\repost.mp4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Images\accept.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\accommodation11.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\accommodation2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\accommodation3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\accommodation4.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\accommodation5.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\accommodation6.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\add.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\ann.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\assessment.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\bar-chart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\barselona1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\barselona2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\barselona3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\beograd1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\beograd2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\beograd3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\booking.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\calendar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\calendar1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\checkTourist.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\delete.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\earth.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\edit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+
+    <Content Include="Resources\Images\find.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\gift-voucher.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\globe-earth.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\hiking.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\job.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\like-icon.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\location-purple.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\location.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\logout.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\mailbox.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\monitor.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\multiply.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\pdf-file.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\pdfback.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\people-purple.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\people.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\person.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\pin (1).png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\pin.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\placeholder (1).png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\profile.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\question-sign.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\question.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\quitTour.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\rating.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\rm222-mind-14.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\signature.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\smiling-face-with-sunglasses.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\star_half_icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\statistics.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\thumb-star.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\tour-guide.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\tourIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\trend.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\try-demo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\verified-user.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\video-lesson.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\view.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\vinogradi1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\vinogradi2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\vinogradi3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\walk.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\when.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\x-icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\zlatibor1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\zlatibor2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Images\zlatibor3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ceTe.DynamicPDF.CoreSuite.NET" Version="12.16.0" />
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.6.0" />
+    <PackageReference Include="FontAwesome.WPF" Version="4.7.0.9" />
+    <PackageReference Include="itext7" Version="8.0.4" />
+    <PackageReference Include="iTextSharp" Version="5.5.13.3" />
+    <PackageReference Include="itextsharp.xmlworker" Version="5.5.13.3" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.77" />
+    <PackageReference Include="MicrosoftExpressionInteractions" Version="3.0.40218" />
+    <PackageReference Include="Notifications2.Wpf.Core" Version="1.4.0" />
+    <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
+    <PackageReference Include="PDFsharp" Version="6.1.0-preview-3" />
+    <PackageReference Include="QuestPDF" Version="2024.3.10" />
+    <PackageReference Include="System.Windows.Interactivity.WPF" Version="2.0.20525" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Images\new-document.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Images\cross.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Resources\Data\TourGuest.csv">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="WPF\View\FollowTourWindow.xaml">
+      <CopyToOutputDirectory>Tour</CopyToOutputDirectory>
+    </Page>
+    <Page Update="WPF\View\SignInForm.xaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="OwnerReport\" />
+  </ItemGroup>
+
+</Project>

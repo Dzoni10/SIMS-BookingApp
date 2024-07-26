@@ -1,0 +1,62 @@
+﻿<UserControl
+    x:Class="BookingApp.WPF.View.VoucherNotification"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    Background="LightYellow"
+    xmlns:local="clr-namespace:BookingApp.WPF.View"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="200"
+    d:DesignWidth="830"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <Storyboard x:Key="OnMouseEnterStoryboard">
+            <DoubleAnimation
+        Storyboard.TargetProperty="(RenderTransform).(TranslateTransform.X)"
+        From="0" To="-20" Duration="0:0:0.1" />
+        </Storyboard>
+        <Storyboard x:Key="OnMouseLeaveStoryboard">
+            <DoubleAnimation
+        Storyboard.TargetProperty="(RenderTransform).(TranslateTransform.X)"
+        From="-20" To="0" Duration="0:0:0.1" />
+        </Storyboard>
+    </UserControl.Resources>
+
+    <UserControl.Style>
+        <Style TargetType="UserControl">
+            <Setter Property="RenderTransform">
+                <Setter.Value>
+                    <TranslateTransform X="0" Y="0" />
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="Mouse.MouseEnter">
+                    <BeginStoryboard Storyboard="{StaticResource OnMouseEnterStoryboard}" />
+                </EventTrigger>
+                <EventTrigger RoutedEvent="Mouse.MouseLeave">
+                    <BeginStoryboard Storyboard="{StaticResource OnMouseLeaveStoryboard}" />
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Style>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Label
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Voucher frenzy!"
+            FontSize="36"
+            FontWeight="Bold" />
+        <Button Command="{Binding DeleteCommand}" HorizontalAlignment="Left" Margin="769,10,0,0" VerticalAlignment="Top" Height="40" Width="40">
+            <Image Source="../../Resources/Images/x-icon.png"/>
+        </Button>
+        <TextBlock FontSize="26" x:Name="NotificationLabel" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Height="80" Width="810"/>
+        <Border BorderBrush="Black" BorderThickness="1" Grid.RowSpan="2"/>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,241 @@
+﻿<Page
+    x:Class="BookingApp.WPF.View.ShowTours"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Behaviors="http://schemas.microsoft.com/xaml/behaviors"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:BookingApp.WPF.View"
+    xmlns:controls="clr-namespace:Notifications.Wpf.Core.Controls;assembly=Notifications.Wpf.Core"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="ShowTours"
+    d:DesignHeight="800"
+    d:DesignWidth="900"
+    mc:Ignorable="d">
+
+    <Grid x:Name="ToursGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="305*" />
+            <RowDefinition Height="249*" />
+            <RowDefinition Height="246*" />
+        </Grid.RowDefinitions>
+        <Border
+            Grid.Row="0"
+            Grid.RowSpan="2"
+            Margin="21,100,15,224"
+            Padding="5"
+            BorderBrush="#80808080"
+            BorderThickness="1"
+            CornerRadius="5">
+            <Grid Margin="0,4,-6,-6">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Label
+                    Width="194"
+                    Height="46"
+                    Margin="0,10,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    Content="State:"
+                    FontSize="26" />
+                <TextBox
+                    x:Name="StateNameSearch"
+                    Grid.Column="1"
+                    Height="44"
+                    Margin="16,12,17,0"
+                    VerticalAlignment="Top"
+                    FontSize="26"
+                    Text=""
+                    TextWrapping="Wrap" />
+                <Label
+                    Grid.Column="2"
+                    Width="195"
+                    Height="56"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Content="Language:"
+                    FontSize="26" />
+                <TextBox
+                    x:Name="LanguageNameSearch"
+                    Grid.Column="3"
+                    Width="180"
+                    Height="46"
+                    Margin="10,10,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    FontSize="26"
+                    Text=""
+                    TextWrapping="Wrap" />
+                <Label
+                    Grid.Row="1"
+                    Width="194"
+                    Height="46"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Content="City:"
+                    FontSize="26" />
+                <TextBox
+                    x:Name="CityNameSearch"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Width="182"
+                    Height="46"
+                    FontSize="26"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Text=""
+                    TextWrapping="Wrap" />
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    Width="205"
+                    Height="46"
+                    Margin="10,0,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    Content="Vacant seats left:"
+                    FontSize="26" Grid.ColumnSpan="2" />
+                <TextBox
+                    x:Name="VacantSeatsSearch"
+                    Grid.Row="1"
+                    Grid.Column="3"
+                    FontSize="26"
+                    Width="180"
+                    Height="46"
+                    Margin="10,0,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    Text=""
+                    TextWrapping="Wrap" />
+                <Label
+                    Grid.Row="2"
+                    Width="215"
+                    Height="40"
+                    Margin="10,7,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Content="Duration of tour:"
+                    FontSize="26" Grid.ColumnSpan="2" />
+                <TextBox
+                    x:Name="DurationSearch"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    FontSize="26"
+                    Width="182"
+                    Height="46"
+                    Margin="0,7,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    Text=""
+                    TextWrapping="Wrap" />
+                <Button
+                    x:Name="Search"
+                    Grid.Row="2"
+                    Grid.Column="3"
+                    Width="104"
+                    Height="40"
+                    Margin="0,10,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    Command="{Binding SearchCommand}"
+                    Content="Search"
+                    FontSize="26" />
+                <Button
+                    x:Name="Clear"
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    Width="144"
+                    Height="40"
+                    Margin="0,10,0,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    Command="{Binding ClearSearchCommand}"
+                    Content="Clear Search"
+                    FontSize="26" />
+            </Grid>
+        </Border>
+        <Frame
+            x:Name="ShowToursFrame"
+            Grid.RowSpan="3"
+            Margin="50,10,50,10"
+            NavigationUIVisibility="Hidden"
+            Visibility="Collapsed" />
+        <Label
+            x:Name="PopUp"
+            Grid.Row="1"
+            FontSize="26"
+            Width="138"
+            Height="28"
+            Margin="636,24,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Select a tour first!"
+            Visibility="Collapsed" />
+        <Label
+            Width="386"
+            Height="63"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Content="Find your next tour!"
+            FontSize="40"
+            FontWeight="Bold" />
+        <Label
+            Grid.Row="0"
+            Width="142"
+            Height="45"
+            Margin="34,55,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Search by:"
+            FontSize="26" />
+        <controls:NotificationArea
+            x:Name="WindowArea"
+            MaxItems="1" 
+            Position="TopRight" 
+            Margin="0,0,257,0"/>
+        <ScrollViewer Grid.Row="1" Margin="20,25,0,10" Grid.RowSpan="2">
+            <ItemsControl ItemsSource="{Binding TourCards}" Height="Auto">
+                <ItemsControl.RenderTransform>
+                    <ScaleTransform />
+                </ItemsControl.RenderTransform>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+        <Button Command="{Binding TutorialCommand}" BorderBrush="Transparent" HorizontalAlignment="Left" Margin="709,13,0,0" Background="Transparent" VerticalAlignment="Top" Width="163" Height="57">
+            <Grid Height="53" Width="178">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="13*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Grid.RenderTransform>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Canvas Margin="-24,0,70,0" Grid.RowSpan="2">
+                    <Image Source="..\..\Resources\Images\video-lesson.png" Grid.Column="0" Height="53" Width="53" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="30"/>
+                    <Label FontSize="26" Content="Tutorial" Grid.Column="1" Canvas.Left="88" HorizontalAlignment="Center" VerticalAlignment="Center" Width="127"/>
+                </Canvas>
+            </Grid>
+        </Button>
+    </Grid>
+</Page>

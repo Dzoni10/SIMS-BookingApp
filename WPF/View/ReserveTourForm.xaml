@@ -1,0 +1,186 @@
+﻿<Page
+    x:Class="BookingApp.WPF.View.ReserveTourForm"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:BookingApp.WPF.View"
+    xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="ReserveTourForm"
+    d:DesignHeight="400"
+    d:DesignWidth="900"
+    mc:Ignorable="d">
+
+    <Grid x:Name="FormGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock
+            FontSize="26"
+            x:Name="Header"
+            Width="180"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            TextWrapping="Wrap" Margin="20,0,0,0"/>
+        <Label
+            FontSize="26"
+            x:Name="FullNameLabel"
+            Grid.Row="1"
+            Height="42"
+            Margin="63,17,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Full name:"/>
+        <TextBox
+            FontSize="26"
+            x:Name="FullNameTextBox"
+            Grid.Row="1"
+            Grid.Column="1"
+            Width="180"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Text="{Binding Path=tourGuest.FullName, UpdateSourceTrigger=PropertyChanged}"
+            TextWrapping="Wrap" Height="41" Margin="0,18,0,0"/>
+        <Label
+            FontSize="26"
+            x:Name="AgeLabel"
+            Grid.Row="2"
+            Height="51"
+            Margin="63,1,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Age:" RenderTransformOrigin="0.454,0.565" Width="127"/>
+        <xctk:IntegerUpDown
+            x:Name="NumberOfGuestsTextBox"
+            FontSize="26" 
+            Grid.Row="2"
+            Width="180"
+            Height="41"
+            Margin="0,6,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Maximum="100"
+            Minimum="12"
+            Value="{Binding tourGuest.Age, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1"/>
+        <Button
+            FontSize="26"
+            x:Name="EnterButton"
+            Grid.Row="3"
+            Grid.Column="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Command="{Binding EnterCommand}"
+            Content="Enter" Width="91"/>
+        <DataGrid
+            FontSize="26"
+            x:Name="TouristsDataGrid"
+            Grid.RowSpan="3"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"
+            Margin="31,28,5,10"
+            AutoGenerateColumns="False"
+            IsReadOnly="True"
+            ItemsSource="{Binding SignedUpTourists, UpdateSourceTrigger=PropertyChanged}"
+            RenderTransformOrigin="0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn
+                    Width="300"
+                    Binding="{Binding FullName}"
+                    Header="Full Name" />
+                <DataGridTextColumn
+                    Width="*"
+                    Binding="{Binding Age}"
+                    Header="Age" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Frame
+            x:Name="ReserveTourFrame"
+            Grid.Row="0"
+            Grid.RowSpan="4"
+            Grid.ColumnSpan="4" />
+        <TextBlock
+            Visibility="Collapsed"
+            x:Name="AreYouSureMessage"
+            Grid.RowSpan="3"
+            Grid.ColumnSpan="3"
+            Width="466"
+            Height="208"
+            Margin="20,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="You've come to the end of this sign up form. By clicking on the Reserve button, you and your friends will take part in this AMAZING tour. Select a voucher if you want to use it!"
+            TextWrapping="Wrap"
+            FontSize="26"/>
+        <TextBlock
+            x:Name="SuccessfullMessage"
+            Grid.Row="1"
+            Grid.RowSpan="2"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Width="301"
+            Height="174"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="Thanks for booking this tour! Your reservation is confirmed. Check out our menu for new adventures!"
+            TextWrapping="Wrap"
+            FontSize="26" Visibility="Collapsed" />
+        <DataGrid
+            FontSize="26"
+            x:Name="TouristsVouchers"
+            Grid.RowSpan="2"
+            Grid.ColumnSpan="2"
+            Margin="20,26,10,10"
+            AutoGenerateColumns="False"
+            IsReadOnly="True"
+            ItemsSource="{Binding Vouchers, UpdateSourceTrigger=PropertyChanged}"
+            RenderTransformOrigin="0,0"
+            SelectedItem="{Binding SelectedVoucher, UpdateSourceTrigger=PropertyChanged}" Grid.Row="2" Visibility="Collapsed">
+            <DataGrid.Columns>
+                <DataGridTextColumn
+                    Width="140"
+                    Binding="{Binding Name}"
+                    Header="Voucher #" />
+                <DataGridTextColumn
+                    Width="*"
+                    Binding="{Binding ExpirationDate, StringFormat={}{0:dd.MM.yyyy HH:mm}}"
+                    Header="ExpirationDate" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="CancelButton" FontSize="26" Grid.Column="2" Content="Cancel" Command="{Binding CancelCommand}" HorizontalAlignment="Left" Margin="96,0,0,0" Grid.Row="3" VerticalAlignment="Center" Width="87" Visibility="Collapsed"/>
+        <Button x:Name="ReserveButton" FontSize="26" Command="{Binding ReserveCommand}" Grid.Column="3" Content="Reserve" HorizontalAlignment="Left" Margin="88,0,0,0" Grid.Row="3" VerticalAlignment="Center" Width="108" Visibility="Collapsed"/>
+        <Image x:Name="LikeImage" Source="../../Resources/Images/thumb-star.png" Grid.Column="2" HorizontalAlignment="Left" Height="168" Margin="112,82,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="176" Grid.ColumnSpan="2" Visibility="Collapsed"/>
+        <Button x:Name="PdfButton" Command="{Binding PDFCommand}" BorderBrush="Transparent" HorizontalAlignment="Left" Margin="31,26,0,0" Background="Transparent" VerticalAlignment="Top" Width="253" Height="66" Grid.Row="3" Grid.ColumnSpan="2" Visibility="Collapsed">
+            <Grid Height="53" Width="249">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="13*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Grid.RenderTransform>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Canvas Margin="-24,0,70,0" Grid.RowSpan="2">
+                    <Image Source="..\..\Resources\Images\pdf-file.png" Grid.Column="0" Height="53" Width="52" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="22"/>
+                    <Label FontSize="26" Content="Reservation info" Grid.Column="1" Canvas.Left="79" HorizontalAlignment="Left" VerticalAlignment="Center" Width="197"/>
+                </Canvas>
+            </Grid>
+        </Button>
+    </Grid>
+</Page>

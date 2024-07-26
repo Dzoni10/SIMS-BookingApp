@@ -1,0 +1,91 @@
+﻿<Window x:Class="BookingApp.WPF.View.GuestWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookingApp.WPF.View"
+        xmlns:fa="clr-namespace:FontAwesome.WPF;assembly=FontAwesome.WPF"
+        mc:Ignorable="d"
+        Title="GuestWindow" Height="740" Width="1024"
+        ResizeMode="NoResize">
+
+    <Grid x:Name="MainWindow">
+        <Grid.Resources>
+            <Style TargetType="Button">
+                <Setter Property="Background" Value="#6741d9" />
+                <Setter Property="Foreground" Value="#fff" />
+                <Setter Property="BorderBrush" Value="#fff" />
+
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border Background="{TemplateBinding Background}" BorderThickness="1">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background" Value="#7b5cd6" />
+                        <Setter Property="Foreground" Value="#ffffff" />
+                        <Setter Property="BorderBrush" Value="#fff" />
+                        <Setter Property="BorderThickness" Value="2" />
+                        <Setter Property="FontWeight" Value="Bold" />
+                        <Setter Property="Cursor" Value="Hand" />
+                    </Trigger>
+                </Style.Triggers>
+
+            </Style>
+        </Grid.Resources>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="0" Grid.Column="0" Width="50" Cursor="Hand" Command="{Binding BackCommand}">
+                <fa:ImageAwesome Icon="ChevronLeft" Width="25" Height="25" Foreground="#fff"/>
+            </Button>
+            <Button x:Name="AccommodationsButton" Content="Accommodations" Grid.Row="0" Grid.Column="1" Command="{Binding AccommodationsCommand}"/>
+            <Button x:Name="GradesButton" Content="Grades" Grid.Row="0" Grid.Column="2" Command="{Binding RateAccommodationCommand}"/>
+            <Button x:Name="MyGradesButton" Content="My grades" Grid.Row="0" Grid.Column="3" Command="{Binding GuestRatesCommand}"/>
+            <Button Content="Reservations" Grid.Row="0" Grid.Column="4" Command="{Binding AllReservationsCommand}" />
+            <Button Grid.Row="0" Grid.Column="5" BorderThickness="1 1 0 1" Command="{Binding ReservationRequestsCommand}">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Reguest   " />
+                    <fa:ImageAwesome x:Name="ExclamationIcon" Icon="Comment" Width="20" Height="20">
+                        <fa:ImageAwesome.Style>
+                            <Style TargetType="fa:ImageAwesome">
+                                <Setter Property="Visibility" Value="Visible" />
+                                <Setter Property="Foreground" Value="White" />
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding ExclamationIcon}" Value="False">
+                                        <Setter Property="Visibility" Value="Hidden" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </fa:ImageAwesome.Style>
+                    </fa:ImageAwesome>
+                </StackPanel>
+            </Button>
+            <Button Content="Anywhere/Anytime" Grid.Row="0" Grid.Column="7" Command="{Binding AnywhereAnytimeCommand}"/>
+            <Button Content="Forum" Grid.Row="0" Grid.Column="8" Command="{Binding AccommodationForumsCommand}"/>
+            <Button Content="Profile" Grid.Row="0" Grid.Column="9" Command="{Binding GuestProfileCommand}"/>
+        </Grid>
+        <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>

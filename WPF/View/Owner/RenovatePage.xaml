@@ -1,0 +1,49 @@
+﻿<Page x:Class="BookingApp.WPF.View.Owner.RenovatePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BookingApp.WPF.View.Owner"
+      xmlns:ns="clr-namespace:BookingApp.Localization"
+      xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      mc:Ignorable="d" 
+      d:DesignHeight="750" d:DesignWidth="430"
+      Title="RenovatePage">
+    <Page.Resources>
+        <ControlTemplate x:Key="ValidationTemplate">
+            <StackPanel>
+                <AdornedElementPlaceholder x:Name="textBox" />
+                <TextBlock Visibility="Visible" Text="{Binding [0].ErrorContent}" Foreground="Red" />
+            </StackPanel>
+        </ControlTemplate>
+
+    </Page.Resources>
+    <Grid>
+        <Button Height="30" Width="90" Foreground="#04477d" FontWeight="Bold" BorderThickness="0" Margin="30,40,290,660" Content="{ns:Loc Back}" Command="{Binding BackCommand}" FontFamily="Segoe UI" FontSize="15"  Background="#8de0eb"></Button>
+        <Label Height="30" Width="122" FontFamily="Segoe UI" FontSize="15" Foreground="#1277c4" VerticalAlignment="Top" HorizontalAlignment="Left" Content="{ns:Loc Accommodation:}" Margin="45,135,0,0"></Label>
+        <TextBox x:Name="AccommodationNameTextBox" FontWeight="Bold" FontSize="14" Height="25" Width="140" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="50,138,0,0" IsReadOnly="True"></TextBox>
+        <Label Height="30" Width="115" FontFamily="Segoe UI" FontSize="15" Foreground="#1277c4" VerticalAlignment="Top" HorizontalAlignment="Left" Content="{ns:Loc StartDate:}" Margin="50,195,0,0"></Label>
+        <DatePicker x:Name="StartDatePicker" Height="30" Width="115" VerticalAlignment="Top" HorizontalAlignment="Center"  Margin="30,197,0,0" SelectedDate="{Binding Renovation.StartDate,UpdateSourceTrigger=PropertyChanged,NotifyOnValidationError=True,ValidatesOnDataErrors=True}" DisplayDateStart="{x:Static sys:DateTime.Now}" Validation.ErrorTemplate="{StaticResource ValidationTemplate}"></DatePicker>
+        <Label  Height="30" Width="115" FontFamily="Segoe UI" FontSize="15" Foreground="#1277c4" VerticalAlignment="Top" HorizontalAlignment="Left" Content="{ns:Loc EndDate:}" Margin="50,255,0,0"></Label>
+        <DatePicker x:Name="EndDatePicker" Height="30" Width="115" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="30,256,0,0" SelectedDate="{Binding Renovation.EndDate,UpdateSourceTrigger=PropertyChanged,NotifyOnValidationError=True,ValidatesOnDataErrors=True}" DisplayDateStart="{x:Static sys:DateTime.Now}" Validation.ErrorTemplate="{StaticResource ValidationTemplate}"></DatePicker>
+        <Label Height="30" Width="115" FontFamily="Segoe UI" FontSize="15" Foreground="#1277c4" VerticalAlignment="Center" HorizontalAlignment="Left" Content="{ns:Loc Duration}" Margin="50,0,0,90"></Label>
+        <TextBox x:Name="DurationTextBox" FontSize="14" Height="25" Width="140" Text="{Binding Renovation.Duration,UpdateSourceTrigger=PropertyChanged,ValidatesOnDataErrors=True,NotifyOnValidationError=True}" Validation.ErrorTemplate="{StaticResource ValidationTemplate}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="60,0,0,90"></TextBox>
+        <Label Height="30" Width="115" FontFamily="Segoe UI" FontSize="15" Foreground="#1277c4" VerticalAlignment="Center" HorizontalAlignment="Left" Content="{ns:Loc Description}" Margin="50,70,0,80"></Label>
+        <TextBox x:Name="DescriptionTextBox" FontSize="14" Height="70" Width="180" HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding Renovation.Description,UpdateSourceTrigger=PropertyChanged,ValidatesOnDataErrors=True,NotifyOnValidationError=True}" Validation.ErrorTemplate="{StaticResource ValidationTemplate}" Margin="100,40,0,0"></TextBox>
+        <Button Height="25" Width="90" Foreground="#04477d" FontWeight="Bold" BorderThickness="0" Margin="40,140,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Content="{ns:Loc Search}" FontFamily="Segoe UI" FontSize="15" Command="{Binding SearchCommand}"  Background="#8de0eb"></Button>
+
+        <DataGrid HorizontalAlignment="Center" AutoGenerateColumns="False" VerticalAlignment="Bottom" ItemsSource="{Binding AvailableDates, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedDate, UpdateSourceTrigger=PropertyChanged}" Width="340" Height="Auto" MaxHeight="170" Margin="0,0,0,110" IsReadOnly="True">
+            <DataGrid.Columns >
+                <DataGridTextColumn Header="{ns:Loc Start_date}" Width="170" Binding="{Binding StartDate,StringFormat=\{0:dd/MM/yyyy\}}"/>
+                <DataGridTextColumn Header="{ns:Loc End_date}" Width="170" Binding="{Binding EndDate,StringFormat=\{0:dd/MM/yyyy\}}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Height="30" Width="90" Foreground="#04477d" FontWeight="Bold" BorderThickness="0" Margin="0,0,30,60" HorizontalAlignment="Right" VerticalAlignment="Bottom" Content="{ns:Loc Renovate}"  FontFamily="Segoe UI" FontSize="15"  Command="{Binding RenovateCommand}" Background="#8de0eb"></Button>
+
+        <Grid.Background>
+            <ImageBrush x:Name="RenovateBackground"></ImageBrush>
+        </Grid.Background>
+
+    </Grid>
+</Page>

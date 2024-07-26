@@ -1,0 +1,60 @@
+﻿<Page x:Class="BookingApp.WPF.View.Owner.ReviewPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BookingApp.WPF.View.Owner"
+      xmlns:ns ="clr-namespace:BookingApp.Localization"
+      mc:Ignorable="d" 
+      d:DesignHeight="750" d:DesignWidth="430" Background="White"
+      Title="ReviewPage">
+    <Page.Resources>
+        <Style x:Key="DarkLabelStyle" TargetType="Label">
+            <Setter Property="Foreground" Value="#1277c4"/>
+        </Style>
+        <Style x:Key="LightLabelStyle" TargetType="Label">
+            <Setter Property="Foreground" Value="#04477d"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        <Label x:Name="TitleLabel" FontFamily="Segoe UI" FontSize="20" Margin="27,9,0,0" FontWeight="Bold" HorizontalAlignment="Center" Content="{ns:Loc Review}" VerticalAlignment="Top"></Label>
+        <Button Height="30" BorderThickness="0" FontWeight="Bold"  Foreground="#04477d" Width="90" Margin="30,40,290,660" Content="{ns:Loc Back}" Command="{Binding BackCommand}" FontFamily="Segoe UI" FontSize="15"  Background="#8de0eb"></Button>
+        <Label Width="430" Height="30" VerticalAlignment="Top" Margin="0,200,0,0" FontFamily="Segoe UI" Foreground="#bf962e" Content="{ns:Loc Attend}"  FontSize="15"></Label>
+        <DataGrid Height="Auto" MaxHeight="370" VerticalAlignment="Center"  AutoGenerateColumns="False" x:Name="OwnerAccommodationRateDataGrid"  Margin="10,200,10,2" ItemsSource="{Binding OwnerAccommodationRates, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="{ns:Loc Name}" Width="90" Binding="{Binding Guest.Name}" />
+                <DataGridTextColumn Header="{ns:Loc Accommodation}" Width="100"  Binding="{Binding Accommodation.Name}"/>
+                <DataGridTextColumn Header="{ns:Loc Accommodation_rate}" Width="121" Binding="{Binding CleanlinessGrade}"/>
+                <DataGridTextColumn Header="{ns:Loc Owner_rate}" Width="77" Binding="{Binding OwnerHospitality}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Menu Width="90" Height="30" VerticalAlignment="Top" FontSize="13" FontWeight="Bold" HorizontalAlignment="Left" Margin="30,100,0,0" Background="#8de0eb"  Foreground="#1277c4" BorderBrush="#1277c4">
+            <MenuItem Header="{ns:Loc Menu}" Margin="10,5,0,0">
+                <MenuItem.HeaderTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding}" Margin="0,0,0,0"/>
+                            <TextBlock Text="▼" Margin="6,0,0,0"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </MenuItem.HeaderTemplate >
+                <MenuItem Header="{ns:Loc Add_Accommodation}" Command="{Binding RegistrationCommand}"></MenuItem>
+                <MenuItem Header="{ns:Loc Rate_Guests}" Command="{Binding RateGuestCommand}"></MenuItem>
+                <MenuItem Header="{ns:Loc Profile}" Command="{Binding OwnerProfileCommand}" InputGestureText="Ctrl+P"></MenuItem>
+                <MenuItem Header="{ns:Loc Accommodations}" Command="{Binding AccommodationsCommand}"></MenuItem>
+                <MenuItem Header="Forum" Command="{Binding ForumCommand}" InputGestureText="Ctrl+F"></MenuItem>
+                <MenuItem Header="{ns:Loc Requests}" Command="{Binding RequestCommand}"></MenuItem>
+                <MenuItem Header="{ns:Loc Renovating}" Command="{Binding RenovatingCommand}"></MenuItem>
+                <MenuItem Header="{ns:Loc Advices}" Command="{Binding AdvicesCommand}" InputGestureText="Ctrl+A"></MenuItem>
+                <MenuItem Header="{ns:Loc Home_page}" Command="{Binding HomePageCommand}"></MenuItem>
+            </MenuItem>
+        </Menu>
+
+        <Grid.Background>
+            <ImageBrush x:Name="ReviewBackground"></ImageBrush>
+        </Grid.Background>
+
+    </Grid>
+</Page>

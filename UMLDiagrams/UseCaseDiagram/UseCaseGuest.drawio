@@ -1,0 +1,141 @@
+<mxfile host="Electron" modified="2024-05-31T10:49:21.677Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="lA3zzc4r94hGd4mXUae2" version="24.2.5" type="device" pages="3">
+  <diagram name="Page-1" id="Gao6CCeyrSvHzHPnSlMe">
+    <mxGraphModel dx="1290" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QE1EpY1hvr6n0u_PBA_X-1" value="Gost" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="80" y="210" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QE1EpY1hvr6n0u_PBA_X-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="170" width="470" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="QE1EpY1hvr6n0u_PBA_X-3" value="BookingApp" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="250" y="170" width="60" height="30" as="geometry" />
+        </mxCell>
+        <UserObject label="" link="data:page/id,4BlbzZwQB25rr30WY9NV" id="QE1EpY1hvr6n0u_PBA_X-4">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="310" y="355" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="QE1EpY1hvr6n0u_PBA_X-5" value="Otvaranje&lt;div&gt;foruma&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="340" y="380" width="60" height="30" as="geometry" />
+        </mxCell>
+        <UserObject label="" link="data:page/id,4BlbzZwQB25rr30WY9NV" id="QE1EpY1hvr6n0u_PBA_X-6">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="330" y="215" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="QE1EpY1hvr6n0u_PBA_X-7" value="Ostavljanje&lt;div&gt;komentara&lt;/div&gt;&lt;div&gt;na forumu&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="360" y="240" width="60" height="30" as="geometry" />
+        </mxCell>
+        <UserObject label="" link="data:page/id,cMyMZTN-Xkny6GXQS5Jq" id="QE1EpY1hvr6n0u_PBA_X-8">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="320" y="450" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="QE1EpY1hvr6n0u_PBA_X-9" value="Pretraga&amp;nbsp;&lt;div&gt;po broju ljudi, broju dana&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="340" y="475" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QE1EpY1hvr6n0u_PBA_X-10" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="QE1EpY1hvr6n0u_PBA_X-4" target="QE1EpY1hvr6n0u_PBA_X-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="350" as="sourcePoint" />
+            <mxPoint x="450" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QE1EpY1hvr6n0u_PBA_X-11" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="QE1EpY1hvr6n0u_PBA_X-6" target="QE1EpY1hvr6n0u_PBA_X-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="260" as="sourcePoint" />
+            <mxPoint x="160" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QE1EpY1hvr6n0u_PBA_X-12" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="QE1EpY1hvr6n0u_PBA_X-8" target="QE1EpY1hvr6n0u_PBA_X-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="365" as="sourcePoint" />
+            <mxPoint x="180" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZUddCmN1AfWreRN_nDoZ-5" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="QE1EpY1hvr6n0u_PBA_X-4" target="QE1EpY1hvr6n0u_PBA_X-6" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="390" y="300" as="sourcePoint" />
+            <mxPoint x="550" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="" link="data:page/id,cMyMZTN-Xkny6GXQS5Jq" id="ljx4JP-d50ewhqAf7Ueq-1">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="320" y="610" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Pretraga&lt;div&gt;smeštaja&lt;/div&gt;" link="data:page/id,cMyMZTN-Xkny6GXQS5Jq" id="ljx4JP-d50ewhqAf7Ueq-2">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="530" y="490" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="_x8vZX4XEAiADp94z5Ct-1" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="QE1EpY1hvr6n0u_PBA_X-8" target="ljx4JP-d50ewhqAf7Ueq-2" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="375" y="270" as="sourcePoint" />
+            <mxPoint x="399" y="339" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JQKyBSkJ250PzLrSri4O-2" value="Pretraga po opsegu datuma" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="350" y="635" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dtJXtdHIAcOuE7yYMlyh-1" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="ljx4JP-d50ewhqAf7Ueq-1" target="QE1EpY1hvr6n0u_PBA_X-8" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="450" y="500" as="sourcePoint" />
+            <mxPoint x="540" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="4BlbzZwQB25rr30WY9NV" name="Page-3">
+    <mxGraphModel dx="1290" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-b6bnM5k2tCqvHz4noWU-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="80" width="390" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="-b6bnM5k2tCqvHz4noWU-2" value="&lt;div&gt;&lt;div&gt;&lt;b&gt;Naziv: &lt;/b&gt;Ostavljanje komentara na forumu&lt;/div&gt;&lt;div&gt;&lt;b&gt;Preduslov:&amp;nbsp;&lt;/b&gt;Korisnik je prijavljen kao gost,&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;pregledao je lokacije i odabrao je forum&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Posledica:&amp;nbsp;&lt;/b&gt;Korsnik je postavio komentar na postojećem forumu&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;b&gt;Osnovni tok:&lt;/b&gt;&lt;div&gt;1. Sistem ucitava stranicu sa svim postojecim komentarima&lt;/div&gt;&lt;div&gt;2. Gost unosi komentar&amp;nbsp;&lt;/div&gt;&lt;div&gt;3. Sistem cuva komentar&lt;/div&gt;&lt;div&gt;4. Sistem prikazuje kreirani komentar&lt;/div&gt;&lt;div&gt;5. Slučaj korišćenja se završava&lt;/div&gt;&lt;div&gt;&lt;b&gt;Alternative:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;3a: Sistem čuva komentar i oznacava ga kao posebno koristan ako je gost vec bio na toj lokaciji&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="30" y="80" width="350" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="75sgWWCs0nZRKWrHWWrA-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="80" width="390" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="75sgWWCs0nZRKWrHWWrA-2" value="&lt;div&gt;&lt;b&gt;Naziv: &lt;/b&gt;Otvaranje foruma&lt;/div&gt;&lt;div&gt;&lt;b&gt;Preduslov: &lt;/b&gt;Korisnik je prijavljen kao gost&lt;/div&gt;&lt;div&gt;&lt;b&gt;Posledica: &lt;/b&gt;Korsnik je otvorio forum na odabranoj lokaciji i &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&amp;nbsp; &amp;nbsp;ostavio prvi komentar&lt;/div&gt;&lt;b&gt;Osnovni tok:&lt;/b&gt;&lt;div&gt;1. Gost pregleda lokacije i klikne na odredjenu lokaciju&amp;nbsp;&lt;/div&gt;&lt;div&gt;2. Sistem ucitava stranicu za individualni forum&lt;/div&gt;&lt;div&gt;&lt;div&gt;3. Sistem kreira forum&lt;/div&gt;&lt;/div&gt;&lt;div&gt;4. [ Uključi: Ostavljanje komentara na forumu ]&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;5. Sistem omogucava gostu opciju da zatvori forum&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;6. Slučaj korišćenja se završava&lt;/div&gt;&lt;div&gt;&lt;b&gt;Alternative:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;3a: Gost se navigira na drugu stranicu i ne kreira forum&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="90" width="350" height="240" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="cMyMZTN-Xkny6GXQS5Jq" name="Page-4">
+    <mxGraphModel dx="1290" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BL4IeS5il5wvud6-nDbh-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="70" width="390" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="BL4IeS5il5wvud6-nDbh-2" value="&lt;div&gt;&lt;div&gt;&lt;b&gt;Naziv: &lt;/b&gt;Pretraga po broju ljudi i broju dana&lt;/div&gt;&lt;div&gt;&lt;b&gt;Preduslov:&amp;nbsp;&lt;/b&gt;Korisnik je prijavljen kao gost&lt;/div&gt;&lt;div&gt;&lt;b&gt;Posledica: &lt;/b&gt;Korisnik je pronašao smeštaj za željeni broj ljudi, broj dana i opciono opseg datuma i rezervisao smeštaj&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;b&gt;Osnovni tok:&lt;/b&gt;&lt;div&gt;1. Korisnik unosi broj ljudi i na koliko dana bi zeleo da putuje&lt;/div&gt;&lt;div&gt;2. [ Tačka proširenja: Pretraga po opsegu datuma ]&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. [ Uključuje: Pretragu smeštaja ]&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. Slučaj korišćenja se završava&lt;/div&gt;&lt;div&gt;&lt;b&gt;Alternative:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="100" y="70" width="370" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="PZ2fJgWXGftWVnVO-jN2-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="260" width="390" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="PZ2fJgWXGftWVnVO-jN2-2" value="&lt;div&gt;&lt;div&gt;&lt;b&gt;Naziv: &lt;/b&gt;Pretraga po opsegu datuma&lt;/div&gt;&lt;div&gt;&lt;b&gt;Preduslov: &lt;/b&gt;Stranica za unošenje filtera je aktivna, korisnik je već uneo filtere po broju ljudi i broju dana&lt;/div&gt;&lt;div&gt;&lt;b&gt;Posledica: &lt;/b&gt;Korisnik je pronašao smeštaj za željeni broj ljudi, broj dana i opseg datuma i rezervisao smeštaj&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;b&gt;Osnovni tok:&lt;/b&gt;&lt;div&gt;1. Korisnik unosi opseg datuma kada bi želeo da putuje&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. Slučaj korišćenja se završava&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Alternative:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="260" width="370" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="m7pMKMDgUdO0POb1Oa2X-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="70" width="390" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="m7pMKMDgUdO0POb1Oa2X-2" value="&lt;div&gt;&lt;div&gt;&lt;b&gt;Naziv: &lt;/b&gt;Pretraga smeštaja&lt;/div&gt;&lt;div&gt;&lt;b&gt;Preduslov:&amp;nbsp;&lt;/b&gt;Korisnik je prijavljen kao gost, popunjene su vrednosti pretrage broj ljudi i broj dana, opciono i opseg datuma&lt;/div&gt;&lt;div&gt;&lt;b&gt;Posledica: &lt;/b&gt;Korisnik je rezervisao smeštaj&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;b&gt;Osnovni tok:&lt;/b&gt;&lt;div&gt;1. Sistem pronalazi slobodne smeštaje i njihove slobodne termine za zadati broj ljudi i broj dana i opciono za&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;zadati opseg datuma&lt;/span&gt;&lt;/div&gt;&lt;div&gt;2. Sistem prikazuje korisniku pronađene slobodne smeštaje i&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; njihove slobodne termine&lt;/div&gt;&lt;div&gt;4. Korisnik bira neku od ponuđenih opcija&lt;/div&gt;&lt;div&gt;5. Sistem kreira rezervaciju&lt;/div&gt;&lt;div&gt;6. Slučaj korišćenja se završava&lt;/div&gt;&lt;div&gt;&lt;b&gt;Alternative:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;4a: Korisnik se navigira na drugu stavku menija i prekida čitav&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;proces&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="510" y="70" width="370" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="m7pMKMDgUdO0POb1Oa2X-3" value="Text" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="925" y="268" width="50" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

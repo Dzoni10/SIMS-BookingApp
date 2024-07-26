@@ -1,0 +1,47 @@
+﻿<Window x:Class="BookingApp.WPF.View.TourRequestStatisticsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookingApp.WPF.View"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Title="Tour Request Statistics" Height="450" Width="400">
+    <Window.InputBindings>
+        <KeyBinding Key="O" Modifiers="Control" Command="{Binding OKCommand}"></KeyBinding>
+        <KeyBinding Key="P" Modifiers="Control" Command="{Binding PDFCommand}"></KeyBinding>
+    </Window.InputBindings>
+    <Grid Background="LightSeaGreen">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" FontWeight="Bold" Content="Search category:" Margin="15,15,0,10"></Label>
+        <ComboBox Grid.Row="1" Width="100" Margin="20,0,0,0" HorizontalAlignment="Left" ItemsSource="{Binding SearchCategory}" SelectedValue="{Binding SelectedCategory}"></ComboBox>
+        <TextBox Visibility="{Binding LanguageVisisbility}" Grid.Row="1" Width="150" x:Name="LanguageTextBox" Margin="00,0,20,0" HorizontalAlignment="Right" Text="{Binding Language}"></TextBox>
+        <ComboBox Visibility="{Binding LocationVisisbility}" Grid.Row="1" Width="100" Margin="150,0,20,0" x:Name="StateComboBox" HorizontalAlignment="Left" ItemsSource="{Binding States}" SelectedItem="{Binding SelectedState}"></ComboBox>
+        <ComboBox Visibility="{Binding LocationVisisbility}" Grid.Row="1" Width="100" Margin="10,0,20,0" x:Name="CityComboBox" HorizontalAlignment="Right" ItemsSource="{Binding Cities}" SelectedItem="{Binding SelectedCity}"></ComboBox>
+        
+        <Image Grid.Row="2" Margin="20" HorizontalAlignment="Left" Source="../../Resources/images/trend.png" Width="25"></Image>
+        <Label Grid.Row="2" HorizontalAlignment="Left" FontWeight="Bold" Content="Request statistic:" Margin="50,20,0,0"></Label>
+        <ComboBox Grid.Row="2" HorizontalAlignment="Right" Margin="0,0,20,0" Width="100" Height="25" ItemsSource="{Binding Years}" SelectedValue="{Binding SelectedYear}"></ComboBox>
+
+        <DataGrid Background="#A1D6E2" Grid.Row="3" Margin="20,0,20,0" ItemsSource="{Binding RequestStatistics}" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Request number" Binding="{Binding RequestNumber}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Year" Binding="{Binding Year}" Width="*"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Grid.Row="4" HorizontalAlignment="Left" Margin="20,0,0,10" Width="30" Height="30" Command="{Binding PDFCommand}">
+            <Button.Background>
+                <ImageBrush ImageSource="../../Resources/Images/pdf-file.png"></ImageBrush>
+            </Button.Background>
+        </Button>
+        <Label Grid.Row="4" HorizontalAlignment="Left" Margin="10,40,0,10">CTRL+P</Label>
+        <Button Grid.Row="4" HorizontalAlignment="Right" Margin="0,10,20,10" Command="{Binding OKCommand}" Content="_OK" Width="50" Height="30"></Button>
+    </Grid>
+</Window>

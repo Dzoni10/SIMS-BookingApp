@@ -1,0 +1,24 @@
+﻿<Page x:Class="BookingApp.WPF.View.Owner.IgnorePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BookingApp.WPF.View.Owner"
+      xmlns:ns="clr-namespace:BookingApp.Localization"
+      mc:Ignorable="d" 
+      d:DesignHeight="750" d:DesignWidth="430" Background="White"
+      Title="IgnorePage">
+
+    <Grid>
+
+        <Button Height="30" Width="90" Foreground="#04477d" FontWeight="Bold" BorderThickness="0" Margin="30,40,290,660" Content="{ns:Loc Back}" Command="{Binding BackCommand}" FontFamily="Segoe UI" FontSize="15"  Background="#8de0eb"></Button>
+        <Label Foreground="#1277c4" VerticalAlignment="Center" FontFamily="Segoe UI" Width="100" HorizontalAlignment="Left" FontSize="15" Content="{ns:Loc Explanation:}" Margin="10,0,0,280"></Label>
+        <TextBox x:Name="ExplanationTextBox" VerticalAlignment="Center" Width="290" Height="150" Margin="0,0,0,100"></TextBox>
+        <Button Height="30" Width="90" VerticalAlignment="Center" Margin="200,100,0,0" Foreground="#04477d" FontWeight="Bold" BorderThickness="0" Content="{ns:Loc Send}" Command="{Binding SendCommand}" FontFamily="Segoe UI" FontSize="15"  Background="#8de0eb"></Button>
+
+        <Grid.Background>
+            <ImageBrush x:Name="IgnoreBackground"></ImageBrush>
+        </Grid.Background>
+
+    </Grid>
+</Page>

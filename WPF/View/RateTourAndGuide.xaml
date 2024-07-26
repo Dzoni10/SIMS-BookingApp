@@ -1,0 +1,84 @@
+﻿<Page
+    x:Class="BookingApp.WPF.View.RateTourAndGuide"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:controls="clr-namespace:Notifications.Wpf.Core.Controls;assembly=Notifications.Wpf.Core"
+    xmlns:local="clr-namespace:BookingApp.WPF.View"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="RateTourAndGuide"
+    d:DesignHeight="800"
+    d:DesignWidth="900"
+    ScrollViewer.CanContentScroll="True"
+    mc:Ignorable="d">
+
+
+    <Grid x:Name="ThisGrid">
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Label
+            Grid.Row="0"
+            Margin="0,10,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Content="Rate tours"
+            FontSize="36"
+            FontWeight="Bold" />
+        <TextBlock
+            Grid.RowSpan="2"
+            Width="780"
+            Height="123"
+            Margin="0,83,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            FontSize="26"
+            FontStyle="Italic"
+            Text="We were glad to have you on this adventure with us. Please consider reviewing our tours so we can help you get better service in the future, and overall improve the quality of our tours!"
+            TextAlignment="Center"
+            TextWrapping="Wrap" />
+        <ScrollViewer Height="Auto" Grid.Row="1" Grid.Column="0" Margin="10,49,10,31" Grid.RowSpan="3" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Hidden">
+            <ItemsControl Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3"  Grid.RowSpan="5" ItemsSource="{Binding Ratings}" Height="496" Width="860">
+                <ItemsControl.ItemContainerStyle>
+                    <Style>
+                        <Setter Property="FrameworkElement.Margin" Value="5"/>
+                    </Style>
+                </ItemsControl.ItemContainerStyle>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+        <Button Command="{Binding TutorialCommand}" BorderBrush="Transparent" HorizontalAlignment="Left" Margin="709,18,0,0" Background="Transparent" VerticalAlignment="Top" Width="181" Height="60">
+            <Grid Height="53" Width="178">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="13*"/>
+                    <RowDefinition Height="40*"/>
+                </Grid.RowDefinitions>
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Grid.RenderTransform>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Canvas Margin="-24,0,70,0" Grid.RowSpan="2">
+                    <Image Source="..\..\Resources\Images\video-lesson.png" Grid.Column="0" Height="53" Width="53" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="40"/>
+                    <Label FontSize="26" Content="Tutorial" Grid.Column="1" Canvas.Left="98" HorizontalAlignment="Center" VerticalAlignment="Top" Width="127" Canvas.Top="-3"/>
+                </Canvas>
+            </Grid>
+        </Button>
+
+    </Grid>
+</Page>

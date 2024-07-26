@@ -1,0 +1,211 @@
+<mxfile host="Electron" modified="2024-05-31T18:28:23.581Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="EZWdcX-Y9ScN-dQIhZfK" version="24.2.5" type="device" pages="5">
+  <diagram name="Page-1" id="Rw9qoTm4UMe90T4-OERN">
+    <mxGraphModel dx="1613" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MO3GSQojdFN3vI4Equds-1" value="&lt;b&gt;Owner&lt;/b&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="110" y="180" width="30" height="60" as="geometry" />
+        </mxCell>
+        <UserObject label="" id="MO3GSQojdFN3vI4Equds-2">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="550" y="20" width="590" height="620" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="MO3GSQojdFN3vI4Equds-4" value="" style="endArrow=None;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="MO3GSQojdFN3vI4Equds-1" target="MO3GSQojdFN3vI4Equds-12" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="190" as="sourcePoint" />
+            <mxPoint x="400.7601777233963" y="209.9971238153503" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MO3GSQojdFN3vI4Equds-8" value="&lt;b&gt;Booking App&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="550" y="30" width="60" height="30" as="geometry" />
+        </mxCell>
+        <UserObject label="Ostavaljanje komentara" link="data:page/id,NS6bUWxBZHtz9IIVaU1H" id="MO3GSQojdFN3vI4Equds-12">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="590" y="60" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Provera godišnje&lt;br&gt;statistike" link="data:page/id,QLq56jpq2d6iS4V9Q9zY" id="MO3GSQojdFN3vI4Equds-13">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="560" y="540" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Provera mesečne&lt;br&gt;statistike" link="data:page/id,QLq56jpq2d6iS4V9Q9zY" id="MO3GSQojdFN3vI4Equds-14">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="640" y="400" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="MO3GSQojdFN3vI4Equds-20" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.71;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="MO3GSQojdFN3vI4Equds-14" target="MO3GSQojdFN3vI4Equds-13" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="810" y="455" as="sourcePoint" />
+            <mxPoint x="680" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MO3GSQojdFN3vI4Equds-21" value="&lt;b&gt;&amp;lt;&amp;lt;extends&amp;gt;&amp;gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="MO3GSQojdFN3vI4Equds-20" vertex="1" connectable="0">
+          <mxGeometry x="0.2147" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MO3GSQojdFN3vI4Equds-22" value="" style="endArrow=None;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="MO3GSQojdFN3vI4Equds-1" target="MO3GSQojdFN3vI4Equds-23" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="220" as="sourcePoint" />
+            <mxPoint x="600" y="140" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MO3GSQojdFN3vI4Equds-23" value="&lt;b&gt;&amp;lt;&amp;lt;CRUD&amp;gt;&amp;gt;&lt;/b&gt;&lt;br&gt;Upravljanje smeštajima" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="590" y="180" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MO3GSQojdFN3vI4Equds-27" value="" style="endArrow=None;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="MO3GSQojdFN3vI4Equds-1" target="MO3GSQojdFN3vI4Equds-13" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="230" as="sourcePoint" />
+            <mxPoint x="550" y="330" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="Prikaz saveta za lokacije" link="data:page/id,1FSvgZ2N3Wpa_85vZxQ4" id="MO3GSQojdFN3vI4Equds-29">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="580" y="280" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Prikaz korisnih&lt;br&gt;lokacija" link="data:page/id,1FSvgZ2N3Wpa_85vZxQ4" id="MO3GSQojdFN3vI4Equds-31">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="840" y="200" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Prikaz neatraktivih&lt;br&gt;lokacija" link="data:page/id,1FSvgZ2N3Wpa_85vZxQ4" id="MO3GSQojdFN3vI4Equds-32">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="840" y="310" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="MO3GSQojdFN3vI4Equds-34" value="" style="endArrow=None;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="MO3GSQojdFN3vI4Equds-1" target="MO3GSQojdFN3vI4Equds-29" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="230" as="sourcePoint" />
+            <mxPoint x="620" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RMmcB61HGAvNL5cyPIU9-1" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;exitX=0.976;exitY=0.36;exitDx=0;exitDy=0;entryX=0.23;entryY=0.899;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="MO3GSQojdFN3vI4Equds-29" target="MO3GSQojdFN3vI4Equds-31" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="840" y="280" as="sourcePoint" />
+            <mxPoint x="691" y="299" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RMmcB61HGAvNL5cyPIU9-2" value="&lt;b&gt;&amp;lt;&amp;lt;include&amp;gt;&amp;gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="RMmcB61HGAvNL5cyPIU9-1" vertex="1" connectable="0">
+          <mxGeometry x="0.2147" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RMmcB61HGAvNL5cyPIU9-3" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;exitX=0.993;exitY=0.613;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="MO3GSQojdFN3vI4Equds-29" target="MO3GSQojdFN3vI4Equds-32" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="830" y="360" as="sourcePoint" />
+            <mxPoint x="690" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RMmcB61HGAvNL5cyPIU9-4" value="&lt;b&gt;&amp;lt;&amp;lt;include&amp;gt;&amp;gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="RMmcB61HGAvNL5cyPIU9-3" vertex="1" connectable="0">
+          <mxGeometry x="0.2147" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="Prijava komentara" link="data:page/id,NS6bUWxBZHtz9IIVaU1H" id="BGXw2cWNY7uavC9JvuLQ-1">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="970" y="60" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="BGXw2cWNY7uavC9JvuLQ-4" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" parent="1" source="BGXw2cWNY7uavC9JvuLQ-1" target="MO3GSQojdFN3vI4Equds-12" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="988" y="192" as="sourcePoint" />
+            <mxPoint x="910" y="150" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BGXw2cWNY7uavC9JvuLQ-5" value="&lt;b&gt;&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="BGXw2cWNY7uavC9JvuLQ-4" vertex="1" connectable="0">
+          <mxGeometry x="-0.0444" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="NS6bUWxBZHtz9IIVaU1H" name="Page-2">
+    <mxGraphModel dx="1032" dy="503" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="x_A9jsgAoBHBvjoMlJsz-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="70" width="390" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="x_A9jsgAoBHBvjoMlJsz-2" value="&lt;div&gt;&lt;div&gt;&lt;b&gt;Naziv: &lt;/b&gt;Ostavljanje komentara na forumu&lt;/div&gt;&lt;div&gt;&lt;b&gt;Preduslov:&amp;nbsp;&lt;/b&gt;Korisnik je prijavljen kao vlasnik, forum mora biti otvoren,&lt;span style=&quot;background-color: initial;&quot;&gt;pregledao je lokacije i odabrao je forum&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Posledica:&amp;nbsp;&lt;/b&gt;Vlasnik je postavio komentar na postojećem forumu&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;b&gt;Osnovni tok:&lt;/b&gt;&lt;div&gt;1. Sistem ucitava stranicu sa svim postojecim komentarima&lt;/div&gt;&lt;div&gt;2. Vlasnik bira lokaciju&amp;nbsp;&lt;/div&gt;&lt;div&gt;3.&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;[tacka prosirenja: prijava komentara ]&lt;/span&gt;&lt;/div&gt;&lt;div&gt;4. Vlasnik unosi komentar&lt;/div&gt;&lt;div&gt;5. Sistem cuva komentar&lt;/div&gt;&lt;div&gt;6. Sistem prikazuje kreirani komentar&lt;/div&gt;&lt;div&gt;7. Slučaj korišćenja se završava&lt;/div&gt;&lt;div&gt;&lt;b&gt;Alternative:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;5a: Sistem čuva komentar i oznacava ga kao komentar koji je&amp;nbsp;&lt;br&gt;eksplicitno od vlasnika&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="100" y="70" width="350" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="EWW8jDBf0Z_yh_3IOiJU-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="70" width="390" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="EWW8jDBf0Z_yh_3IOiJU-2" value="&lt;div&gt;&lt;div&gt;&lt;b&gt;Naziv: &lt;/b&gt;Prijava komentara&lt;/div&gt;&lt;div&gt;&lt;b&gt;Preduslov:&amp;nbsp;&lt;/b&gt;Korisnik je prijavljen kao vlasnik&lt;/div&gt;&lt;div&gt;&lt;b&gt;Posledica:&amp;nbsp;&lt;/b&gt;Vlasnik moze da prijavi nevalidne komentare na forumu&lt;/div&gt;&lt;/div&gt;&lt;b&gt;Osnovni tok:&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1. Vlasniku bira komentar koji zeli da prijavi&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. Vlasnik prijavljuje komentar&lt;/div&gt;&lt;div&gt;3. Azurira se lista prikaza&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;4. Slučaj korišćenja se završava&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Alternative:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;3a. Sistem cuva komentar koji nosi posebnu oznaku reported&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="75" width="350" height="220" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="aHyjwfaxXZ1Pq2MyzlOe" name="Page-3">
+    <mxGraphModel dx="1290" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ExWszn2PtWStFD2RuSWt-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="70" width="390" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="ExWszn2PtWStFD2RuSWt-2" value="&lt;div&gt;&lt;div&gt;&lt;b&gt;Naziv: &lt;/b&gt;Otvoren forum&lt;/div&gt;&lt;div&gt;&lt;b&gt;Preduslov:&amp;nbsp;&lt;/b&gt;Korisnik je prijavljen kao vlasnik,&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;dobio je informaciju o otvorenom forumu - koga je gost pre toga otvorio&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Posledica:&amp;nbsp;&lt;/b&gt;Vlasnik je u mogucnosti da postavi komentar ili prijavi postojeci&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;b&gt;Osnovni tok:&lt;/b&gt;&lt;div&gt;1. Sistem salje obavestenje o otvorenom forumu&lt;/div&gt;&lt;div&gt;2. Vlasnik moze uneti komentar ili prijaviti postojeci&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3. Slučaj korišćenja se završava&lt;br&gt;&lt;b&gt;Alternative:&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;2a. Forum koji postigne 10 komentara od vlasnika i 20 od korisnika postaje veoma koristan&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="100" y="70" width="350" height="230" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="1FSvgZ2N3Wpa_85vZxQ4" name="Page-4">
+    <mxGraphModel dx="1229" dy="599" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="q8grPjPRt1Hb4UrXhRN7-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="70" width="390" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="q8grPjPRt1Hb4UrXhRN7-2" value="&lt;div&gt;&lt;div&gt;&lt;b&gt;Naziv: &lt;/b&gt;Prikaz saveta za lokacije&lt;/div&gt;&lt;div&gt;&lt;b&gt;Preduslov:&amp;nbsp;&lt;/b&gt;Korisnik je prijavljen kao vlasnik, i bira u meniju&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;pregled saveta za lokacije&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Posledica:&amp;nbsp;&lt;/b&gt;Vlasnik moze na osnovu informacija da proceni gde da otvori novi smestaj, a gde da ga zatvori&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;b&gt;Osnovni tok:&lt;/b&gt;&lt;div&gt;1. Sistem ucitava stranicu sa predlozima za lokacije&lt;/div&gt;&lt;div&gt;2.[ukljucuje: prikaz korisnih lokacija]&lt;/div&gt;&lt;div&gt;3.&lt;span style=&quot;background-color: initial;&quot;&gt;[ukljucuje: prikaz neatrativnih lokacija]&lt;/span&gt;&lt;/div&gt;&lt;div&gt;4. Vlasnik u odnosu na lokacije odlucuje gde treba otvoriti novi smestaj a gde zatvroriti&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;5. Slučaj korišćenja se završava&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Alternative:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;1a: Sistem prikazuje ekslplicitno koje lokacije su malo prometne a koje mnogo prometne&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="100" y="70" width="350" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="pzElnw5P_ndeAITlSca0-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="70" width="390" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="pzElnw5P_ndeAITlSca0-2" value="&lt;div&gt;&lt;div&gt;&lt;b&gt;Naziv: &lt;/b&gt;Prikaz korisnih lokacija&lt;/div&gt;&lt;div&gt;&lt;b&gt;Preduslov:&amp;nbsp;&lt;/b&gt;Otvorena stranica za predloge&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Posledica:&amp;nbsp;&lt;/b&gt;Vlasnik moze na osnovu informacija da proceni gde da otvori novi smestaj,&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;b&gt;Osnovni tok:&lt;/b&gt;&lt;div&gt;1. Sistem ucitava predloge korisnih lokacija&lt;/div&gt;&lt;div&gt;2. Vlasnik u odnosu na tabelu korisnih lokacija odlucuje gde treba otvoriti novi smestaj&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3. Slučaj korišćenja se završava&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Alternative:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;1a: Sistem prikazuje ekslplicitno koje lokacije su mnogo prometne&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="620" y="70" width="350" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="JLIPBgkQfWcpM6G6Pp8c-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="400" width="390" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="JLIPBgkQfWcpM6G6Pp8c-2" value="&lt;div&gt;&lt;div&gt;&lt;b&gt;Naziv: &lt;/b&gt;Prikaz neatraktivnih lokacija&lt;/div&gt;&lt;div&gt;&lt;b&gt;Preduslov:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Otvorena stranica za predloge&lt;br&gt;&lt;/span&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;Posledica:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Vlasnik moze na osnovu informacija da proceni gde da zatvori smestaj,&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;b&gt;Osnovni tok:&lt;/b&gt;&lt;div&gt;1.&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;Sistem ucitava predloge neatraktivnih lokacija&lt;/span&gt;&lt;/div&gt;&lt;div&gt;2. Vlasnik u odnosu na tabelu neatraktivnih lokacija odlucuje gde treba zatvoriti smestaj&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3. Slučaj korišćenja se završava&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Alternative:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;1a: Sistem prikazuje ekslplicitno koje lokacije su neatraktivne&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="400" width="350" height="230" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="QLq56jpq2d6iS4V9Q9zY" name="Page-7">
+    <mxGraphModel dx="1173" dy="572" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n-s5WqDqGzPRc7nIRTyb-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="90" y="70" width="390" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="n-s5WqDqGzPRc7nIRTyb-2" value="&lt;div&gt;&lt;div&gt;&lt;b&gt;Naziv: &lt;/b&gt;Provera godisnje statistike&lt;/div&gt;&lt;div&gt;&lt;b&gt;Preduslov:&amp;nbsp;&lt;/b&gt;Korisnik je prijavljen kao vlasnik, i bira statisticki izvestaj za ciljni smestaj&lt;/div&gt;&lt;div&gt;&lt;b&gt;Posledica:&amp;nbsp;&lt;/b&gt;Vlasnik moze da vidi sve potrebne informacije o smestaju po godinama kao i kreirati izvestaj&lt;/div&gt;&lt;/div&gt;&lt;b&gt;Osnovni tok:&lt;/b&gt;&lt;div&gt;1. Sistem ucitava stranicu sa smestajima gde bira statistiku za izabrani smestaj&lt;/div&gt;&lt;div&gt;2. Vlasnik bira prikaz statistike smestaja&lt;/div&gt;&lt;div&gt;3. Sistem prikazuje tabelu statistike po godinama&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;4. [tacka prosirenja: provera mesecne statistike]&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;5. Slučaj korišćenja se završava&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Alternative:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;2a: Vlasnik moze kreirati pismeni izvestaj u PDF-u&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="100" y="70" width="350" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="GVeknNm92ElLDKdPGBLo-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="70" width="390" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="GVeknNm92ElLDKdPGBLo-2" value="&lt;div&gt;&lt;div&gt;&lt;b&gt;Naziv: &lt;/b&gt;Provera mesecne statistike&lt;/div&gt;&lt;div&gt;&lt;b&gt;Preduslov:&amp;nbsp;&lt;/b&gt;Korisnik je prijavljen kao vlasnik, i bira statisticki izvestaj za ciljani smestaj&lt;/div&gt;&lt;div&gt;&lt;b&gt;Posledica:&amp;nbsp;&lt;/b&gt;Vlasnik moze da vidi sve potrebne informacije o smestaju po mesecima za izabranu godinu&lt;/div&gt;&lt;/div&gt;&lt;b&gt;Osnovni tok:&lt;/b&gt;&lt;div&gt;1. Sistem ucitava stranicu sa smestajima sa godisnjom statistikom za izabrani smestaj&lt;/div&gt;&lt;div&gt;2. Vlasnik zatim u godisnjoj statistici bira mesecnu statistiku za zeljenu godinu&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3. Slučaj korišćenja se završava&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Alternative:&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="70" width="350" height="230" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

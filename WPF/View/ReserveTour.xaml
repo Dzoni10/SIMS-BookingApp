@@ -1,0 +1,104 @@
+﻿<Page
+    x:Class="BookingApp.WPF.View.ReserveTour"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Behaviors="http://schemas.microsoft.com/xaml/behaviors"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" 
+    xmlns:local="clr-namespace:BookingApp.WPF.View"
+    xmlns:controls="clr-namespace:Notifications.Wpf.Core.Controls;assembly=Notifications.Wpf.Core"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="ReserveTour"
+    d:DesignHeight="800"
+    d:DesignWidth="900"
+    mc:Ignorable="d">
+
+    <Grid x:Name="ThisGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="74*" />
+            <RowDefinition Height="151*" />
+            <RowDefinition Height="113*" />
+            <RowDefinition Height="113*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Frame
+            x:Name="ReserveForm"
+            Grid.Row="2"
+            Grid.RowSpan="2"
+            Grid.ColumnSpan="4"
+            Margin="0,1,10,0" />
+        <Frame
+            x:Name="ShowTours"
+            Grid.Row="0"
+            Grid.RowSpan="4"
+            Grid.ColumnSpan="4" />
+        <Label
+            FontSize="26"
+            Margin="21,73,91,0"
+            VerticalAlignment="Top"
+            Content="Enter the number of tourists:" Grid.ColumnSpan="2" />
+        <xctk:IntegerUpDown
+            x:Name="NumberOfGuestsTextBox"
+            FontSize="26"
+            Width="204"
+            Height="41"
+            Margin="142,77,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Maximum="30"
+            Minimum="1"
+            Value="{Binding NumberOfGuests, Mode=TwoWay}" Grid.Column="1" Grid.ColumnSpan="2" />
+        <Button
+            FontSize="26"
+            Grid.Column="2"
+            Width="264"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Command="{Binding CheckAvailableSpotsCommand}"
+            Content="Check available spots" Margin="39,8,0,0" Grid.Row="1" Grid.ColumnSpan="2" />
+        <Label
+            FontSize="26"
+            x:Name="SeatsLeftLabel"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"
+            Width="310"
+            Margin="130,73,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content=""/>
+        <Label x:Name="TourNameAndDateLabel" FontSize="26" Grid.Column="1" Content="" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="1,10,0,0" VerticalAlignment="Top" Width="448" Grid.ColumnSpan="2"/>
+        <Button FontSize="26" Command="{Binding CancelCommand}" Content="Cancel reservation" HorizontalAlignment="Left" Margin="145,8,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label x:Name="CheckOutLabel" FontSize="26" Content="Check out other tours we recommend for you:" HorizontalAlignment="Left" Margin="169,52,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="4" Width="562"/>
+        <ScrollViewer  x:Name="ScrollViewerName" Height="Auto" Grid.Row="1" Grid.Column="0" Margin="21,97,0,10" Grid.RowSpan="3" VerticalScrollBarVisibility="Auto" Grid.ColumnSpan="4">
+            <ItemsControl x:Name="ItemsControlName" ItemsSource="{Binding Tours}" Margin="0,0,10,0" Width="854" Height="520">
+                <ItemsControl.ItemContainerStyle>
+                    <Style>
+                        <Setter Property="FrameworkElement.Margin" Value="5"/>
+                        <Setter Property="Control.HorizontalAlignment" Value="Stretch"/>
+                    </Style>
+                </ItemsControl.ItemContainerStyle>
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+        <Image Visibility="Collapsed" Stretch="Fill" x:Name="ImageNumberTwo" Source="{Binding SecondImage.Path}" HorizontalAlignment="Left" Height="208" Margin="50,56,0,0" Grid.Row="1" VerticalAlignment="Top" Width="240" Grid.ColumnSpan="2"/>
+        <Image Visibility="Collapsed" Stretch="Fill" x:Name="ImageNumberOne" Source="{Binding FirstImage.Path}" HorizontalAlignment="Left" Height="208" Margin="113,56,0,0" Grid.Row="1" VerticalAlignment="Top" Width="240" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Image Visibility="Collapsed" Stretch="Fill" x:Name="ImageNumberThree" Source="{Binding ThirdImage.Path}" HorizontalAlignment="Left" Height="208" Margin="189,56,0,0" Grid.Row="1" VerticalAlignment="Top" Width="240" Grid.ColumnSpan="2" Grid.Column="2"/>
+        <controls:NotificationArea
+            x:Name="WindowArea"
+            MaxItems="1" 
+            Position="TopRight" Grid.ColumnSpan="3" Margin="0,0,113,102" Grid.RowSpan="2"/>
+    </Grid>
+</Page>

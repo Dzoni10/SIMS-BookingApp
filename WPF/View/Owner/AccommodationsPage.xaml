@@ -1,0 +1,63 @@
+﻿<Page x:Class="BookingApp.WPF.View.Owner.AccommodationsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BookingApp.WPF.View.Owner"
+      xmlns:ns ="clr-namespace:BookingApp.Localization"
+      mc:Ignorable="d" 
+      d:DesignHeight="750" d:DesignWidth="430"
+      Title="AccommodationsPage">
+    <Page.Resources>
+        <Style x:Key="DarkLabelStyle" TargetType="Label">
+            <Setter Property="Foreground" Value="#1277c4"/>
+        </Style>
+        <Style x:Key="LightLabelStyle" TargetType="Label">
+            <Setter Property="Foreground" Value="#04477d"/>
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <Label x:Name="TitleLabel" FontFamily="Segoe UI" FontSize="20" Margin="23,9,0,0" FontWeight="Bold" HorizontalAlignment="Center" Content="{ns:Loc Accommodations}" VerticalAlignment="Top"></Label>
+        <Button Height="30" Width="90" Margin="0,0,160,250" BorderThickness="0" Foreground="#04477d" FontWeight="Bold" Content="{ns:Loc Delete}" FontFamily="Segoe UI" FontSize="15" Command="{Binding DeleteCommand}" Background="#8de0eb"></Button>
+        <Button x:Name="ViewStatsButton" Height="30" Width="100" Margin="60,0,0,250" BorderThickness="0" Foreground="#04477d" FontWeight="Bold" Content="{ns:Loc View_stats}" FontFamily="Segoe UI" FontSize="15" Command="{Binding ViewStatsCommand}"  Background="#8de0eb"></Button>
+        <Button Height="30" Width="116" Margin="290,0,0,250"  BorderThickness="0" Content="{ns:Loc Create_Report}" Foreground="#04477d" FontWeight="Bold" FontFamily="Segoe UI" FontSize="15"  Background="#8de0eb" Command="{Binding ReportCommand}"></Button>
+        <Button Height="30" Width="99" Margin="-230,0,0,90" BorderThickness="0" Foreground="#04477d" FontWeight="Bold" VerticalAlignment="Bottom" Content="{ns:Loc Requests}" FontFamily="Segoe UI" FontSize="15"  Background="#8de0eb" Command="{Binding RequestCommand}"></Button>
+        <Button Height="30" Width="99" Margin="240,0,0,90" BorderThickness="0" Foreground="#04477d" FontWeight="Bold" VerticalAlignment="Bottom" Content="{ns:Loc Renovating}" FontFamily="Segoe UI" FontSize="15"  Background="#8de0eb" Command="{Binding RenovatingCommand}"></Button>
+
+        <DataGrid Height="Auto" MaxHeight="300" BorderThickness="0" AutoGenerateColumns="False" x:Name="AccommodationDataGrid" VerticalAlignment="Center" Margin="5,200,5,70" ItemsSource="{Binding Accommodations, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedAccommodation, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="{ns:Loc Name}" Width="90" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="{ns:Loc Type}" Width="60" Binding="{Binding Type}"/>
+                <DataGridTextColumn Header="{ns:Loc Capacity}" Width="60" Binding="{Binding Capacity}"/>
+                <DataGridTextColumn Header="{ns:Loc City}" Width="95" Binding="{Binding Location.City}"/>
+                <DataGridTextColumn Header="{ns:Loc State}" Width="95" Binding="{Binding Location.State}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Menu Width="90" Height="30" VerticalAlignment="Top" FontSize="13" FontWeight="Bold" HorizontalAlignment="Left" Margin="30,80,0,0" Background="#8de0eb"  Foreground="#1277c4" BorderBrush="#1277c4">
+            <MenuItem Header="{ns:Loc Menu}" Margin="10,5,0,0">
+                <MenuItem.HeaderTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding}" Margin="0,0,0,0"/>
+                            <TextBlock Text="▼" Margin="6,0,0,0"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </MenuItem.HeaderTemplate >
+                <MenuItem Header="{ns:Loc Add_Accommodation}" Command="{Binding RegistrationAccommodationCommand}"></MenuItem>
+                <MenuItem Header="{ns:Loc Rate_Guests}" Command="{Binding RateGuestCommand}"></MenuItem>
+                <MenuItem Header="{ns:Loc Profile}" Command="{Binding OwnerProfileCommand}" InputGestureText="Ctrl+P"></MenuItem>
+                <MenuItem Header="Forum" Command="{Binding ForumCommand}" InputGestureText="Ctrl+F"></MenuItem>
+                <MenuItem Header="{ns:Loc Requests}" Command="{Binding RequestCommand}"></MenuItem>
+                <MenuItem Header="{ns:Loc Renovating}" Command="{Binding RenovatingCommand}"></MenuItem>
+                <MenuItem Header="{ns:Loc Review}" Command="{Binding ReviewCommand}" InputGestureText="Ctrl+R"></MenuItem>
+                <MenuItem Header="{ns:Loc Advices}" Command="{Binding AdvicesCommand}" InputGestureText="Ctrl+A"></MenuItem>
+                <MenuItem Header="{ns:Loc Home_page}" Command="{Binding HomePageCommand}"></MenuItem>
+            </MenuItem>
+        </Menu>
+
+        <Grid.Background>
+            <ImageBrush x:Name="AccommodationsBackground"></ImageBrush>
+        </Grid.Background>
+    </Grid>
+</Page>

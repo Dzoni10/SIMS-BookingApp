@@ -1,0 +1,39 @@
+﻿<Window x:Class="BookingApp.WPF.View.CancelTourWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookingApp.WPF.View"
+        mc:Ignorable="d"
+        Title="Cancel Tour" Height="450" Width="600"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Window.InputBindings>
+        <KeyBinding Key="Q" Modifiers="Control" Command="{Binding QuitTourCommand}"></KeyBinding>
+        <KeyBinding Key="O" Modifiers="Control" Command="{Binding OkCommand}"></KeyBinding>
+    </Window.InputBindings>
+    <Grid Background="LightSeaGreen">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Image Grid.Row="0" Source="../../Resources/Images/job.png" Width="70" HorizontalAlignment="Left" Margin="20,10,0,10"></Image>
+        <Label Grid.Row="0" Margin="90,20,0,0" FontWeight="Bold" Content="Select tour to quit and press CTRL+Q."></Label>
+        <DataGrid Grid.Row="1" Margin="10,0,10,10"  AutoGenerateColumns="False" SelectionMode="Single" IsReadOnly="True"
+            ItemsSource="{Binding FutureTours, UpdateSourceTrigger=PropertyChanged}"
+            SelectedItem="{Binding SelectedFutureTour, UpdateSourceTrigger=PropertyChanged}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Width="120" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="City" Width="120" Binding="{Binding Location.City}"/>
+                <DataGridTextColumn Header="State" Width="120" Binding="{Binding Location.State}"/>
+                <DataGridTextColumn Header="Date" Width="130" Binding="{Binding StartTourDate.Date, StringFormat={}{0:dd.MM.yyyy HH:mm}}"/>
+                <DataGridTextColumn Header="Capacity" Width="120" Binding="{Binding Capacity}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Grid.Row="2" HorizontalAlignment="Left" Content="_Quit" Command="{Binding QuitTourCommand}" Width="100" Margin="10"></Button>
+        <Button Grid.Row="2" HorizontalAlignment="Right" Content="_OK" Command="{Binding OkCommand}" Width="100" Margin="10"></Button>
+    </Grid>
+</Window>

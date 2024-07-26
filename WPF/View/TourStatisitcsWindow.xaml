@@ -1,0 +1,53 @@
+﻿<Window x:Class="BookingApp.WPF.View.TourStatisitcsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookingApp.WPF.View"
+        mc:Ignorable="d"
+        Title="Tour Statisitcs" Height="350" Width="400"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    
+    <Window.InputBindings>
+        <KeyBinding Key="O" Modifiers="Control" Command="{Binding OKCommand}"></KeyBinding>
+    </Window.InputBindings>
+   
+
+    <Grid Background="#66A5AD">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <GroupBox Grid.Row="0" Margin="20" BorderThickness="1" BorderBrush="Black" Background="#C4DFE6">
+            <GroupBox.Header>
+                <Label FontWeight="Bold" Content="Statistic"></Label>
+            </GroupBox.Header>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition ></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions> 
+                <Label Grid.Row="0" Grid.Column="0" Content="Tour:"></Label>
+                <Label Grid.Row="0" Grid.Column="1" FontWeight="Bold" Content="{Binding SelectedTour.Name}"></Label>
+                
+                <Label Grid.Row="1" Grid.Column="0" Content="Tourists under 18: "></Label>
+                <Label Grid.Row="1" Grid.Column="1" Content="{Binding Under18}"></Label>
+                
+                <Label Grid.Row="2" Grid.Column="0" Content="Tourists between 18 and 50: "></Label>
+                <Label Grid.Row="2" Grid.Column="1" Content="{Binding Between18_50}"></Label>
+                
+                <Label Grid.Row="3" Grid.Column="0" Content="Tourists over 50: "></Label>
+                <Label Grid.Row="3" Grid.Column="1" Content="{Binding Over50}"></Label>
+            </Grid>
+        </GroupBox>
+        <Button Grid.Row="1" Command="{Binding OKCommand}" Width="70" HorizontalAlignment="Right" Margin="0,0,20,10" Content="_OK"></Button>
+        <Image Grid.Row="1" HorizontalAlignment="Left" Margin="20,0,0,10" Source="..\Resources\Images\trend.png" Width="20"></Image>
+    </Grid>
+</Window>

@@ -1,0 +1,71 @@
+﻿<UserControl x:Class="BookingApp.WPF.View.ReviewControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BookingApp.WPF.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="170" d:DesignWidth="550">
+    <!--<Grid>
+        <Rectangle Fill="LightGray" RadiusX="15" RadiusY="15" Width="550"/>-->
+    <Border Margin="0,0,10,10" Padding="10" BorderBrush="LightGray" CornerRadius="3">
+        <Grid Background="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0">
+                <Label Margin="7,2,0,0" FontWeight="Bold">Tourist:</Label>
+                <Label Margin="7,2,0,0">Tour:</Label>
+                <Label Margin="7,2,0,0">Guide knowlage:</Label>
+                <Label Margin="7,2,0,0">Guide language:</Label>
+                <Label Margin="7,2,0,0">Tour fun:</Label>
+                <Label Margin="7,2,0,0">Valid:</Label>
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <Label  Margin="7,2,0,0" Content="{Binding Tourist}" FontWeight="Bold"/>
+                <Label  Margin="7,2,0,0" Content="{Binding Tour}"/>
+                <Label Margin="7,2,0,0" Content="{Binding GuideKnowlage}"/>
+                <Label Margin="7,2,0,0" Content="{Binding GuideLanguage}"/>
+                <Label Margin="7,2,0,0" Content="{Binding TourFun}"/>
+                <Grid Margin="7,2,0,0">
+                    <Image HorizontalAlignment="Left" x:Name="DA" Source="{Binding ImagePath}" Width="20" Height="20" />
+                    
+                </Grid>
+            </StackPanel>
+            <StackPanel Margin="30,0,0,0"  Grid.Column="2" >
+                <GroupBox BorderBrush="Black" Background="LightGray" Margin="0,0,10,0">
+                    <GroupBox.Header>
+                        <Label>Comment</Label>
+                    </GroupBox.Header>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto" Height="50">
+                        <TextBlock Text="{Binding Comment}"
+                       Width="200"
+                       TextWrapping="Wrap"/>
+                    </ScrollViewer>
+                </GroupBox>
+                
+                <!--<Grid>-->
+                    <!--<Rectangle Height="100" Fill="White"/>-->
+                    <!--<TextBlock Text="{Binding Comment}"></TextBlock>-->
+                
+               
+                <!--</Grid>-->
+                <GroupBox BorderBrush="Black" Background="LightGray" Margin="0,0,10,0">
+                <GroupBox.Header>
+                    <Label Content="Hint"></Label>
+                </GroupBox.Header>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto" Height="50">
+                        <Label Content="{Binding Checkpoint}"  ></Label>
+                    </ScrollViewer>
+                </GroupBox>
+               
+
+                <Button VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,5,10,0" Content="Report" Click="ReportClick" Width="50" Height="20" ></Button>
+            </StackPanel>
+
+        </Grid>
+    <!--</Grid>-->
+    </Border>
+</UserControl>

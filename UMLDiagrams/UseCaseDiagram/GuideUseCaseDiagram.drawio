@@ -1,0 +1,105 @@
+<mxfile host="app.diagrams.net" modified="2024-05-31T10:56:22.984Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="O4LK5g9t7PAN8_ITX8XA" version="24.4.11" type="device" pages="4">
+  <diagram name="Page-1" id="zNwF2prUDDAHzJmrXX6F">
+    <mxGraphModel dx="880" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kTXipDaI5O1k9E5Ow8MP-2" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.patternFillRect;fillStyle=hor;step=5;fillStrokeWidth=0.2;fillStrokeColor=#dddddd;" parent="1" vertex="1">
+          <mxGeometry x="330" y="150" width="320" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="kTXipDaI5O1k9E5Ow8MP-3" value="Guide&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelPosition=center;align=center;" parent="1" vertex="1">
+          <mxGeometry x="210" y="190" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kTXipDaI5O1k9E5Ow8MP-4" value="System Clock" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="200" y="495" width="30" height="60" as="geometry" />
+        </mxCell>
+        <UserObject label="Daje Otkaz" link="data:page/id,IvUYjd6d9zZIP8GcyWYG" id="kTXipDaI5O1k9E5Ow8MP-12">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;verticalAlign=top;" parent="1" vertex="1">
+            <mxGeometry x="420" y="200" width="140" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Verifikacija statusa vodiča" link="data:page/id,h7PTk4PNu0rParZE3dV6" id="kTXipDaI5O1k9E5Ow8MP-14">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="450" y="500" width="115" height="50" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="kTXipDaI5O1k9E5Ow8MP-19" value="System" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="450" y="120" width="60" height="30" as="geometry" />
+        </mxCell>
+        <UserObject label="Prihvatanje dijela zahteva za slozenu turu" link="data:page/id,LS3npUqicyQYSGfq_lkk" id="kTXipDaI5O1k9E5Ow8MP-20">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+            <mxGeometry x="425" y="260" width="140" height="50" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="kTXipDaI5O1k9E5Ow8MP-23" value="Predlaganje slobodnih termina" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="427.5" y="360" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kTXipDaI5O1k9E5Ow8MP-26" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="kTXipDaI5O1k9E5Ow8MP-3" target="kTXipDaI5O1k9E5Ow8MP-12" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="400" as="sourcePoint" />
+            <mxPoint x="260" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kTXipDaI5O1k9E5Ow8MP-27" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="kTXipDaI5O1k9E5Ow8MP-20" target="kTXipDaI5O1k9E5Ow8MP-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="380" as="sourcePoint" />
+            <mxPoint x="220" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kTXipDaI5O1k9E5Ow8MP-28" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="kTXipDaI5O1k9E5Ow8MP-4" target="kTXipDaI5O1k9E5Ow8MP-14" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="470" as="sourcePoint" />
+            <mxPoint x="290" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kTXipDaI5O1k9E5Ow8MP-29" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;exitX=0.457;exitY=1.04;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="kTXipDaI5O1k9E5Ow8MP-20" target="kTXipDaI5O1k9E5Ow8MP-23" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="420" as="sourcePoint" />
+            <mxPoint x="270" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kTXipDaI5O1k9E5Ow8MP-30" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="kTXipDaI5O1k9E5Ow8MP-29" vertex="1" connectable="0">
+          <mxGeometry x="-0.1438" y="1" relative="1" as="geometry">
+            <mxPoint x="-14" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="LS3npUqicyQYSGfq_lkk" name="Page-2">
+    <mxGraphModel dx="880" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="i0dj44revnxZm0oFiKSx-1" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 19px; font-weight: normal;&quot;&gt;Preduslov&lt;/font&gt;&lt;span style=&quot;font-size: 23px;&quot;&gt;:&lt;/span&gt;&lt;/h1&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;-Korisnki je prijavljen na sistem i otvorio je odgovarajuci prozor&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;p style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;Posledica&lt;/font&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;:&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 12px;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;-Zahtjev je prihvacen&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;p style=&quot;font-size: 19px;&quot;&gt;Osnovni tok:&lt;/p&gt;&lt;p style=&quot;font-size: 16px;&quot;&gt;1. Sistem prikazuje sve zahtjeve za sloznu turu&lt;/p&gt;&lt;p style=&quot;font-size: 16px;&quot;&gt;2. Korisnik bira jedan slozen zahtjev&lt;/p&gt;&lt;p style=&quot;font-size: 16px;&quot;&gt;3. Sistem prikazuje sve proste zahtjeve u zahtjevu za slozenu turu&lt;/p&gt;&lt;p style=&quot;font-size: 16px;&quot;&gt;4. Korisnik bira jedan zahtjev&lt;/p&gt;&lt;p style=&quot;font-size: 16px;&quot;&gt;5. [Slobodni termini]&lt;/p&gt;&lt;p style=&quot;font-size: 16px;&quot;&gt;6. Korisnik bira jedan od tih termina i prihvata zahtjev&lt;/p&gt;&lt;p style=&quot;font-size: 16px;&quot;&gt;7. Sistem kreira turu na osnovu prihvacenog zahtjeva&lt;/p&gt;&lt;p style=&quot;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="30" width="340" height="550" as="geometry" />
+        </mxCell>
+        <mxCell id="Cj_rH4BqLjLJ4Gvq-O9d-1" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;[Slobodni termini]&lt;/font&gt;&lt;br style=&quot;font-size: 19px;&quot;&gt;&lt;h1 style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; margin-top: 0px;&quot;&gt;&lt;font style=&quot;forced-color-adjust: none; font-size: 19px; font-weight: normal;&quot;&gt;Preduslov&lt;/font&gt;&lt;font style=&quot;forced-color-adjust: none; font-weight: normal; font-size: 23px;&quot;&gt;:&lt;/font&gt;&lt;/h1&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 16px;&quot;&gt;-Korisnki je izabrao jedan zahtjev&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 19px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 19px;&quot;&gt;Posledica:&lt;/div&gt;&lt;div style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;-Lista slobodnih termina za izvodjenje ture&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;p style=&quot;font-size: 19px;&quot;&gt;Osnovni tok:&lt;/p&gt;&lt;p style=&quot;font-size: 16px;&quot;&gt;1. Sistem ucitava sve slotove od po sat vremena za period koji je vodic naveo&lt;/p&gt;&lt;p style=&quot;font-size: 16px;&quot;&gt;2. Sistem provjerava da li je vodic zauzet u odredjenom terminu&lt;/p&gt;&lt;p style=&quot;font-size: 16px;&quot;&gt;3. Sisitem provjerava da li je neki drugi vodic prihvatio dio ture u tom terminu&lt;/p&gt;&lt;p style=&quot;font-size: 16px;&quot;&gt;4. Sistem kreira konacnu listu slobodnih termina&lt;/p&gt;&lt;p style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="530" y="80" width="300" height="460" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="IvUYjd6d9zZIP8GcyWYG" name="Page-3">
+    <mxGraphModel dx="880" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="R9vnIJMVb3NqswXpoxUT-1" value="&lt;h1 style=&quot;margin-top: 0px; font-size: 19px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Preduslovi:&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal; font-size: 16px;&quot;&gt;-Korisnik je ulogovan na sistem&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal; font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;font-size: 19px;&quot;&gt;Posledica:&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;-Sve ture ovog vodica su otkazane i tursiti su dobili po vaucer za svaku otkazanu turu koji mogu iskoristiti za bilo koju turu&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Osnovni tok:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;nbsp; &amp;nbsp;1. Korisnik podnosi zahtjev za otkaz&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;nbsp; &amp;nbsp;2. Sistem mu nudi mogucnost da se predomisli&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp;3. Korisnik potvrdjuje odluku&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp;4. Sistem otkazuje sve ture ovog vodica&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal; font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp;5. Sistem dodjeljuje vaucere turistima koji su&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;prijavljeni na ture ovog vodica&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal; font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Alternativni tok:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&amp;nbsp; &amp;nbsp;3a:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1. Korisnik odustaje od otkaza&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal; font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 19px;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="90" y="50" width="430" height="620" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="h7PTk4PNu0rParZE3dV6" name="Page-4">
+    <mxGraphModel dx="880" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2PTz11BcHW6NEQbl0T3--2" value="&lt;h1 style=&quot;margin-top: 0px; font-size: 19px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Preduslov:&lt;/span&gt;&lt;/h1&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;-Vodic postoji u sistemu&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;h1 style=&quot;margin-top: 0px; font-size: 19px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Posledica:&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;-Promjena statusa vodica&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;Osnovni tok:&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp;1. Sistem provjerava da li je vodic imao bar 20 &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;vodjenih tura na nekom jeziku&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp;2. Sistem provjerava da li prosjecna ocjena&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;na &lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;turama ovog vodica u poslednjih godinu dan &lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;veca od 4.0&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp;3. Sistem markira vodica kao super-vodic&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;Alternativni tok:&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp;1a:&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1. Korinik nije imao 20 tura na odredjenom &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;jeziku&amp;nbsp;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;2. Sistem markira vodica da nije super-vodic&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&amp;nbsp; &amp;nbsp;2a:&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1. Vodic nije ima ocjenu vecu od 4.0&amp;nbsp;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. Sistem markira vodica da nije super-vodic&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="80" y="70" width="380" height="510" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
